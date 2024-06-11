@@ -1,0 +1,12 @@
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\bin\Debug\net8.0\SocialNetworkApp.Core.deps.json
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\bin\Debug\net8.0\SocialNetworkApp.Core.dll
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\bin\Debug\net8.0\SocialNetworkApp.Core.pdb
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\obj\Debug\net8.0\SocialNetworkApp.Core.csproj.AssemblyReference.cache
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\obj\Debug\net8.0\SocialNetworkApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\obj\Debug\net8.0\SocialNetworkApp.Core.AssemblyInfoInputs.cache
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\obj\Debug\net8.0\SocialNetworkApp.Core.AssemblyInfo.cs
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\obj\Debug\net8.0\SocialNetworkApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\obj\Debug\net8.0\SocialNetworkApp.Core.dll
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\obj\Debug\net8.0\refint\SocialNetworkApp.Core.dll
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\obj\Debug\net8.0\SocialNetworkApp.Core.pdb
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\obj\Debug\net8.0\ref\SocialNetworkApp.Core.dll

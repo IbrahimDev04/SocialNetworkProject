@@ -1,0 +1,665 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\css\\tailwind.css",
+      "PackagePath": "staticwebassets\\assets\\css\\tailwind.css"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\ad_pattern.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ad_pattern.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\avatars\\avatar-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\avatar-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\avatars\\avatar-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\avatar-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\avatars\\avatar-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\avatar-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\avatars\\avatar-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\avatar-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\avatars\\avatar-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\avatar-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\avatars\\avatar-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\avatar-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\avatars\\avatar-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\avatar-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\avatars\\avatar-lg-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\avatar-lg-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\avatars\\avatar-lg-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\avatar-lg-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\avatars\\avatar-lg-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\avatar-lg-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\avatars\\avatar-lg-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\avatar-lg-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\avatars\\avatar-lg-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\avatar-lg-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\avatars\\profile-cover.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\profile-cover.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\beams.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\beams.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\blog\\img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\blog\\img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\blog\\img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\blog\\img-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\blog\\img-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\brand-tailwind.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\brand-tailwind.svg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\brand-uikit.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\brand-uikit.svg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\category\\business.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\category\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\category\\buy-and-sell.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\category\\buy-and-sell.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\category\\health.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\category\\health.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\category\\science-and-tech.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\category\\science-and-tech.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\category\\travel.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\category\\travel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\beams.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\beams.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\blog-read.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\blog-read.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\blogs-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\blogs-2.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\blogs.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\blogs.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\code-prev.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\code-prev.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\code-prev2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\code-prev2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\code-prev3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\code-prev3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\components.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\components.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\event-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\event-2.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\events.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\events.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\form-login.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\form-login.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\form-register.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\form-register.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\funding.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\funding.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\games.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\games.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\groups-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\groups-2.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\groups.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\groups.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\home.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\home.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\messages.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\messages.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\pages.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\pages.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\photo1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\photo1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\photo2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\photo2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\photo3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\photo3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\photo4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\photo4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\prev-courseplus.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\prev-courseplus.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\prev-flex.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\prev-flex.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\prev-installo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\prev-installo.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\product-view-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\product-view-1.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\product-view-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\product-view-2.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\products.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\products.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\settings.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\settings.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\slider1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\slider1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\slider2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\slider2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\slider3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\slider3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\slider4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\slider4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\timeline-event.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\timeline-event.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\timeline-funds.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\timeline-funds.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\timeline-group.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\timeline-group.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\timeline-page.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\timeline-page.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\timeline.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\timeline.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\upgrade.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\upgrade.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\videos-watch.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\videos-watch.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\demos\\videos.png",
+      "PackagePath": "staticwebassets\\assets\\images\\demos\\videos.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\events\\img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\events\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\events\\img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\events\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\events\\img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\events\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\events\\img-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\events\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\events\\listing-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\events\\listing-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\events\\listing-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\events\\listing-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\events\\listing-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\events\\listing-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\events\\listing-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\events\\listing-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\events\\listing-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\events\\listing-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\events\\listing-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\events\\listing-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\funding\\funder-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\funding\\funder-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\funding\\funder-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\funding\\funder-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\funding\\funder-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\funding\\funder-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\funding\\funder-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\funding\\funder-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\games\\img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\games\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\games\\img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\games\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\games\\img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\games\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\games\\img-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\games\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\games\\img-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\games\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\games\\img-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\games\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\games\\img-lg-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\games\\img-lg-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\games\\img-lg-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\games\\img-lg-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\games\\img-lg-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\games\\img-lg-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\grid.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\grid.svg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\group\\avatar-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\group\\avatar-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\group\\avatar-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\group\\avatar-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\group\\group-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\group\\group-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\group\\group-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\group\\group-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\group\\group-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\group\\group-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\group\\group-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\group\\group-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\group\\group-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\group\\group-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\group\\group-avature.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\group\\group-avature.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\group\\group-cover-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\group\\group-cover-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\group\\group-cover-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\group\\group-cover-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\group\\group-cover-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\group\\group-cover-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\group\\group-cover-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\group\\group-cover-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\group\\group-cover-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\group\\group-cover-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\group\\group-cover.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\group\\group-cover.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\icon-play.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon-play.svg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\icons\\blog-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\blog-2.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\icons\\blog.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\blog.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\icons\\event-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\event-2.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\icons\\event.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\event.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\icons\\fund.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\fund.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\icons\\game.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\game.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\icons\\group-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\group-2.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\icons\\group.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\group.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\icons\\home.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\home.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\icons\\market-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\market-2.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\icons\\market.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\market.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\icons\\message.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\message.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\icons\\page.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\page.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\icons\\video.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\video.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\logo-icon-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-icon-2.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\logo-icon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\logo-light.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-light.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\logo-mobile-light.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-mobile-light.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\logo-mobile.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-mobile.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\post\\img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\post\\img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\post\\img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\post\\img-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\post\\post-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\post-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\product\\product-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\product-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\product\\product-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\product-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\product\\product-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\product-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\product\\product-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\product-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\product\\product-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\product-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\product\\product-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\product-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\product\\product-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\product-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\product\\product-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\product-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\product\\product-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\product-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\product\\product-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\product-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\product\\product-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\product-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\video\\img-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\video\\img-1.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\video\\img-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\video\\img-2.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\video\\img-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\video\\img-3.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\video\\img-4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\video\\img-4.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\video\\img-5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\video\\img-5.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\video\\img-6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\video\\img-6.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\js\\script.js",
+      "PackagePath": "staticwebassets\\assets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\js\\simplebar.js",
+      "PackagePath": "staticwebassets\\assets\\js\\simplebar.js"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\js\\uikit.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\uikit.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\syntax-highlighter\\scripts\\shBrushJScript.js",
+      "PackagePath": "staticwebassets\\assets\\syntax-highlighter\\scripts\\shBrushJScript.js"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\syntax-highlighter\\scripts\\shBrushXml.js",
+      "PackagePath": "staticwebassets\\assets\\syntax-highlighter\\scripts\\shBrushXml.js"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\syntax-highlighter\\scripts\\shCore.js",
+      "PackagePath": "staticwebassets\\assets\\syntax-highlighter\\scripts\\shCore.js"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\syntax-highlighter\\styles\\shCore.css",
+      "PackagePath": "staticwebassets\\assets\\syntax-highlighter\\styles\\shCore.css"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\syntax-highlighter\\styles\\shCoreMidnight.css",
+      "PackagePath": "staticwebassets\\assets\\syntax-highlighter\\styles\\shCoreMidnight.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SocialNetworkApp_MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SocialNetworkApp_MVC.props",
+      "PackagePath": "build\\SocialNetworkApp_MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SocialNetworkApp_MVC.props",
+      "PackagePath": "buildMultiTargeting\\SocialNetworkApp_MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SocialNetworkApp_MVC.props",
+      "PackagePath": "buildTransitive\\SocialNetworkApp_MVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

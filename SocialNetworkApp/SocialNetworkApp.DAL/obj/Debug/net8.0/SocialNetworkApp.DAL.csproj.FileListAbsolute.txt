@@ -1,0 +1,17 @@
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\bin\Debug\net8.0\SocialNetworkApp.DAL.deps.json
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\bin\Debug\net8.0\SocialNetworkApp.DAL.runtimeconfig.json
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\bin\Debug\net8.0\SocialNetworkApp.DAL.dll
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\bin\Debug\net8.0\SocialNetworkApp.DAL.pdb
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\bin\Debug\net8.0\SocialNetworkApp.Core.dll
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\bin\Debug\net8.0\SocialNetworkApp.Core.pdb
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\obj\Debug\net8.0\SocialNetworkApp.DAL.csproj.AssemblyReference.cache
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\obj\Debug\net8.0\SocialNetworkApp.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\obj\Debug\net8.0\SocialNetworkApp.DAL.AssemblyInfoInputs.cache
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\obj\Debug\net8.0\SocialNetworkApp.DAL.AssemblyInfo.cs
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\obj\Debug\net8.0\SocialNetworkApp.DAL.csproj.CoreCompileInputs.cache
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\obj\Debug\net8.0\SocialNe.1C860C63.Up2Date
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\obj\Debug\net8.0\SocialNetworkApp.DAL.dll
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\obj\Debug\net8.0\refint\SocialNetworkApp.DAL.dll
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\obj\Debug\net8.0\SocialNetworkApp.DAL.pdb
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\obj\Debug\net8.0\SocialNetworkApp.DAL.genruntimeconfig.cache
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\obj\Debug\net8.0\ref\SocialNetworkApp.DAL.dll

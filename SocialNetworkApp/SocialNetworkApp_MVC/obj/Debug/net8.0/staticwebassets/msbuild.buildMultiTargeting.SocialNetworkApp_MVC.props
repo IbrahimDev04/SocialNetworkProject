@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SocialNetworkApp_MVC.props" />
+</Project>

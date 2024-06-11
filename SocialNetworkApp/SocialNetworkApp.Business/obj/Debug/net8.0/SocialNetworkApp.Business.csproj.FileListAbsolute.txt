@@ -1,0 +1,17 @@
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\bin\Debug\net8.0\SocialNetworkApp.Business.deps.json
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\bin\Debug\net8.0\SocialNetworkApp.Business.dll
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\bin\Debug\net8.0\SocialNetworkApp.Business.pdb
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\bin\Debug\net8.0\SocialNetworkApp.Core.dll
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\bin\Debug\net8.0\SocialNetworkApp.DAL.dll
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\bin\Debug\net8.0\SocialNetworkApp.DAL.pdb
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\bin\Debug\net8.0\SocialNetworkApp.Core.pdb
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\obj\Debug\net8.0\SocialNetworkApp.Business.csproj.AssemblyReference.cache
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\obj\Debug\net8.0\SocialNetworkApp.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\obj\Debug\net8.0\SocialNetworkApp.Business.AssemblyInfoInputs.cache
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\obj\Debug\net8.0\SocialNetworkApp.Business.AssemblyInfo.cs
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\obj\Debug\net8.0\SocialNetworkApp.Business.csproj.CoreCompileInputs.cache
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\obj\Debug\net8.0\SocialNe.27CC3E32.Up2Date
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\obj\Debug\net8.0\SocialNetworkApp.Business.dll
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\obj\Debug\net8.0\refint\SocialNetworkApp.Business.dll
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\obj\Debug\net8.0\SocialNetworkApp.Business.pdb
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\obj\Debug\net8.0\ref\SocialNetworkApp.Business.dll

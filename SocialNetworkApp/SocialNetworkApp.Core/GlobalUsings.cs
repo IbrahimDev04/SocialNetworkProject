@@ -1,0 +1,1 @@
+﻿global using SocialNetworkApp.Core.Entities.Commons;
