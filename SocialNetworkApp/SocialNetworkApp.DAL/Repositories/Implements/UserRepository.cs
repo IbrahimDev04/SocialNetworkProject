@@ -8,9 +8,9 @@ namespace SocialNetworkApp.DAL.Repositories.Implements;
 
 public class UserRepository<TIdentity>(UserManager<AppUser> _userManager, SignInManager<AppUser> _signInManager) : IUserRepository<TIdentity> where TIdentity : AppUser, new()
 {
-    public async Task CheckPasswordSignInAsync(AppUser user, string password)
+    public async Task<SignInResult> CheckPasswordSignInAsync(AppUser user, string password)
     {
-        await _signInManager.CheckPasswordSignInAsync(user, password, true);
+        return await _signInManager.CheckPasswordSignInAsync(user, password, true);
     }
 
     public async Task<AppUser> FindByEmailAsync(string Email)
@@ -25,6 +25,7 @@ public class UserRepository<TIdentity>(UserManager<AppUser> _userManager, SignIn
 
     public async Task<IdentityResult> RegisteredAsync(TIdentity identity, string password)
     {
+        
         return await _userManager.CreateAsync(identity, password);
     }
 

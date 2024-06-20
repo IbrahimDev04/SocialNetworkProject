@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace SocialNetworkApp.Business.ViewModels.UserLocation;
 
-namespace SocialNetworkApp.Business.ViewModels.UserLocation
+public class ChangableUserLocationVM
 {
-    internal class ChangableUserLocationVM
-    {
-    }
+    public string? UserId { get; set; }
+    public string? Country { get; set; } = string.Empty;
+    public string? City { get; set; } = string.Empty;
+    public string? State { get; set; } = string.Empty;
 }

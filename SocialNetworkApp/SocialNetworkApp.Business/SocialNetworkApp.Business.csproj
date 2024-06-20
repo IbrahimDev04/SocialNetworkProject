@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SocialNetworkApp.DAL\SocialNetworkApp.DAL.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.1.0" />
+    <PackageReference Include="Microsoft.SqlServer.SqlManagementObjects" Version="171.30.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Exceptions\Common\" />
+    <ProjectReference Include="..\SocialNetworkApp.DAL\SocialNetworkApp.DAL.csproj" />
   </ItemGroup>
 
 </Project>

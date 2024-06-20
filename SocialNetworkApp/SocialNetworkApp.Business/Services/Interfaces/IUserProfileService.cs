@@ -1,8 +1,14 @@
-﻿using SocialNetworkApp.Business.ViewModels.UserProfile;
+﻿using SocialNetworkApp.Business.ViewModels.DataCourier;
+using SocialNetworkApp.Business.ViewModels.UserProfile;
 
 namespace SocialNetworkApp.Business.Services.Interfaces;
 
 public interface IUserProfileService
 {
-    public Task CreateAsync(ChangableUserProfileVM userProfileVM, string userId);
+
+    public Task<bool> CheckImage(ChangableUserProfileVM userProfileVM);
+    public Task CreateAsync(ChangableUserProfileVM userProfileVM, string userId, string? fileName);
+    public Task<SettingsCurier> GetUserProfileById(string UserId);
+    public Task<SettingsCurier> UpdateUserProfileById(SettingsCurier curier, string UserId);
+    public Task UpdateUserProfilePhotoById(string UserId, string? fileName);
 }

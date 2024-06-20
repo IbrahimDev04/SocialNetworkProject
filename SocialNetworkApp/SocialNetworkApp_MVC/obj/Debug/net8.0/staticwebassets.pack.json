@@ -1,12 +1,48 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\SignalR\\ChatHub.js",
+      "PackagePath": "staticwebassets\\SignalR\\ChatHub.js"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\SignalR\\jquery.min.js",
+      "PackagePath": "staticwebassets\\SignalR\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\SignalR\\signalr.min.js",
+      "PackagePath": "staticwebassets\\SignalR\\signalr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\css\\result-page.css",
+      "PackagePath": "staticwebassets\\assets\\css\\result-page.css"
+    },
+    {
       "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\css\\style.css",
       "PackagePath": "staticwebassets\\assets\\css\\style.css"
     },
     {
       "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\css\\tailwind.css",
       "PackagePath": "staticwebassets\\assets\\css\\tailwind.css"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\fonts\\icofont.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icofont.eot"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\fonts\\icofont.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icofont.svg"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\fonts\\icofont.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icofont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\fonts\\icofont.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icofont.woff"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\fonts\\icofont.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icofont.woff2"
     },
     {
       "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\ad_pattern.png",
@@ -625,24 +661,28 @@
       "PackagePath": "staticwebassets\\assets\\js\\uikit.min.js"
     },
     {
-      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\syntax-highlighter\\scripts\\shBrushJScript.js",
-      "PackagePath": "staticwebassets\\assets\\syntax-highlighter\\scripts\\shBrushJScript.js"
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\imgs\\profilePhoto\\11kbcthk.kaw.png",
+      "PackagePath": "staticwebassets\\imgs\\profilePhoto\\11kbcthk.kaw.png"
     },
     {
-      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\syntax-highlighter\\scripts\\shBrushXml.js",
-      "PackagePath": "staticwebassets\\assets\\syntax-highlighter\\scripts\\shBrushXml.js"
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\imgs\\profilePhoto\\50tfcilc.crw.png",
+      "PackagePath": "staticwebassets\\imgs\\profilePhoto\\50tfcilc.crw.png"
     },
     {
-      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\syntax-highlighter\\scripts\\shCore.js",
-      "PackagePath": "staticwebassets\\assets\\syntax-highlighter\\scripts\\shCore.js"
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\imgs\\profilePhoto\\bwqytzgs.ezk.png",
+      "PackagePath": "staticwebassets\\imgs\\profilePhoto\\bwqytzgs.ezk.png"
     },
     {
-      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\syntax-highlighter\\styles\\shCore.css",
-      "PackagePath": "staticwebassets\\assets\\syntax-highlighter\\styles\\shCore.css"
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\imgs\\profilePhoto\\download.png",
+      "PackagePath": "staticwebassets\\imgs\\profilePhoto\\download.png"
     },
     {
-      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\syntax-highlighter\\styles\\shCoreMidnight.css",
-      "PackagePath": "staticwebassets\\assets\\syntax-highlighter\\styles\\shCoreMidnight.css"
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\imgs\\profilePhoto\\tdwno1ev.skc.png",
+      "PackagePath": "staticwebassets\\imgs\\profilePhoto\\tdwno1ev.skc.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\imgs\\profilePhoto\\ylyoo5xi.cnp.png",
+      "PackagePath": "staticwebassets\\imgs\\profilePhoto\\ylyoo5xi.cnp.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SocialNetworkApp_MVC.Microsoft.AspNetCore.StaticWebAssets.props",

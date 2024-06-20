@@ -1,0 +1,556 @@
+﻿@using SocialNetworkApp.Business.Enums
+@{
+    ViewData["Title"] = "ProfileSettings";
+}
+
+@model SettingsCurier
+
+<div id="wrapper">
+
+
+    <!-- main contents -->
+    <main id="site__main" class="2xl:ml-[--w-side]  xl:ml-[--w-side-sm] p-2.5 h-[calc(100vh-var(--m-top))] mt-[--m-top]">
+
+        <div class="max-w-3xl mx-auto">
+
+
+            <div class="box relative rounded-lg shadow-md">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="flex md:gap-8 gap-4 items-center md:p-8 p-6 md:pb-4">
+
+
+                        <div class="relative md:w-20 md:h-20 w-12 h-12 shrink-0">
+                            <label asp-for="UserProfileVM.ProfilePhoto" for="file" class="cursor-pointer">
+                                <img id="img" src="assets/images/avatars/avatar-3.jpg" class="object-cover w-full h-full rounded-full" alt="" />
+                                <input asp-for="UserProfileVM.ProfilePhoto" id="file" class="hidden" />
+                            </label>
+
+                            <label asp-for="UserProfileVM.ProfilePhoto" for="file" class="md:p-1 p-0.5 rounded-full bg-slate-600 md:border-4 border-white absolute -bottom-2 -right-2 cursor-pointer dark:border-slate-700">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="md:w-4 md:h-4 w-3 h-3 fill-white">
+                                    <path d="M12 9a3.75 3.75 0 100 7.5A3.75 3.75 0 0012 9z" />
+                                    <path fill-rule="evenodd" d="M9.344 3.071a49.52 49.52 0 015.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71.386.054.77.113 1.152.177 1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 01-3 3h-15a3 3 0 01-3-3V9.574c0-1.416.997-2.67 2.429-2.909.382-.064.766-.123 1.151-.178a1.56 1.56 0 001.11-.71l.822-1.315a2.942 2.942 0 012.332-1.39zM6.75 12.75a5.25 5.25 0 1110.5 0 5.25 5.25 0 01-10.5 0zm12-1.5a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+                                </svg>
+
+                                <input asp-for="UserProfileVM.ProfilePhoto" id="file" class="hidden" />
+
+                            </label>
+
+                        </div>
+
+                        <div class="flex-1">
+                            <h3 class="md:text-xl text-base font-semibold text-black dark:text-white"> Monroe Parker </h3>
+                            <p class="text-sm text-blue-600 mt-1 font-normal">@@Monroe</p>
+                        </div>
+
+                        <button class="inline-flex items-center gap-1 py-1 pl-2.5 pr-3 rounded-full bg-slate-50 border-2 border-slate-100 dark:text-white dark:bg-slate-700" type="submit" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-pen text-base duration-500 group-aria-expanded:rotate-180 md hydrated"></i>
+                            <span class="font-medium text-sm"> Update PP  </span>
+                        </button>
+                    </div>
+                </form>
+                
+
+                <!-- nav tabs -->
+                <div class="relative border-b" tabindex="-1" uk-slider="finite: true">
+
+                    <nav class="uk-slider-container overflow-hidden nav__underline px-6 p-0 border-transparent -mb-px">
+
+                        <ul class="uk-slider-items w-[calc(100%+10px)] !overflow-hidden"
+                            uk-switcher="connect: #setting_tab ; animation: uk-animation-slide-right-medium, uk-animation-slide-left-medium">
+
+                            <li class="w-auto pr-2.5"> <a href="#"> User Profile</a> </li>
+                            <li class="w-auto pr-2.5"> <a href="#"> Security</a> </li>
+                            <li class="w-auto pr-2.5"> <a href="#"> Social Media</a> </li>
+                            <li class="w-auto pr-2.5"> <a href="#"> Settings</a> </li>
+
+                        </ul>
+
+                    </nav>
+
+                    <a class="absolute -translate-y-1/2 top-1/2 left-0 flex items-center w-20 h-full p-2 py-1 justify-start bg-gradient-to-r from-white via-white dark:from-slate-800 dark:via-slate-800" href="#" uk-slider-item="previous"> <ion-icon name="chevron-back" class="text-2xl ml-1"></ion-icon> </a>
+                    <a class="absolute right-0 -translate-y-1/2 top-1/2 flex items-center w-20 h-full p-2 py-1 justify-end bg-gradient-to-l from-white via-white dark:from-slate-800 dark:via-slate-800" href="#" uk-slider-item="next">  <ion-icon name="chevron-forward" class="text-2xl mr-1"></ion-icon> </a>
+
+                </div>
+
+
+                <div id="setting_tab" class="uk-switcher md:py-12 md:px-20 p-6 overflow-hidden text-black text-sm">
+
+
+                    <!-- tab user basic info -->
+                    <div>
+
+                        <div>
+                            <form method="post">
+                                <div class="space-y-6">
+
+                                    <div class="md:flex items-center gap-10">
+                                        <label asp-for="UserProfileVM.Name" class="md:w-32 text-right"> Name </label>
+                                        <div class="flex-1 max-md:mt-4">
+                                            <input asp-for="UserProfileVM.Name" value="@Model.UserProfileVM.Name" class="lg:w-1/2 w-full">
+                                        </div>
+                                    </div>
+
+                                    <div class="md:flex items-center gap-10">
+                                        <label asp-for="UserProfileVM.Surname" class="md:w-32 text-right"> Surname </label>
+                                        <div class="flex-1 max-md:mt-4">
+                                            <input asp-for="UserProfileVM.Surname" value="@Model.UserProfileVM.Surname" class="lg:w-1/2 w-full">
+                                        </div>
+                                    </div>
+
+                                    <div class="md:flex items-start gap-10">
+                                        <label asp-for="UserProfileVM.About" class="md:w-32 text-right"> Bio </label>
+                                        <div class="flex-1 max-md:mt-4">
+                                            <textarea asp-for="UserProfileVM.About" class="w-full" rows="5" placeholder="@Model.UserProfileVM.About"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="md:flex items-center gap-10">
+                                        <label asp-for="UserProfileVM.Gender" class="md:w-32 text-right">  </label>
+                                        <div class="flex-1 max-md:mt-4">
+                                            <select asp-for="UserProfileVM.Gender" class="!border-0 !rounded-md lg:w-1/2 w-full">
+                                                @foreach (var item in Enum.GetValues(typeof(GenderEnum)))
+                                                {
+                                                    <option value="@item.ToString()">@item.ToString()</option>
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-4 mt-16 lg:pl-[10.5rem]">
+                                        <button class="button lg:px-10 bg-primary text-white max-md:flex-1"> Save <span class="ripple-overlay"></span></button>
+                                    </div>
+                                </div>
+
+                                
+                            </form>
+                             
+
+                        </div>
+
+                    </div>
+
+                    <!-- tab password-->
+                    <div>
+
+                        <div>
+                            <form method="post">
+                                <div class="space-y-6 max-w-lg mx-auto">
+
+                                    <div class="md:flex items-center gap-16 justify-between max-md:space-y-3">
+                                        <label class="md:w-40 text-right"> Username </label>
+                                        <div class="flex-1 max-md:mt-4">
+                                            <input type="text" placeholder="Monroe" class="lg:w-1/2 w-full">
+                                        </div>
+                                    </div>
+
+                                    <hr class="border-gray-100 dark:border-gray-700">
+
+                                    <div class="md:flex items-center gap-16 justify-between max-md:space-y-3">
+                                        <label asp-for="ChangePasswordVM.CurrentPassword" class="md:w-40 text-right"> Current Password </label>
+                                        <div class="flex-1 max-md:mt-4">
+                                            <input asp-for="ChangePasswordVM.CurrentPassword" placeholder="******" class="w-full">
+                                        </div>
+                                    </div>
+
+                                    <div class="md:flex items-center gap-16 justify-between max-md:space-y-3">
+                                        <label asp-for="ChangePasswordVM.NewPassword" class="md:w-40 text-right"> New password </label>
+                                        <div class="flex-1 max-md:mt-4">
+                                            <input asp-for="ChangePasswordVM.NewPassword" placeholder="******" class="w-full">
+                                        </div>
+                                    </div>
+
+                                    <div class="md:flex items-center gap-16 justify-between max-md:space-y-3">
+                                        <label asp-for="ChangePasswordVM.RepeatPassword" class="md:w-40 text-right"> Repeat password </label>
+                                        <div class="flex-1 max-md:mt-4">
+                                            <input asp-for="ChangePasswordVM.RepeatPassword" placeholder="******" class="w-full">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="flex items-center justify-center gap-4 mt-16">
+                                    <button type="submit" class="button lg:px-10 bg-primary text-white max-md:flex-1"> Save</button>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                    <!-- tab socialinks -->
+                    <div class="space-y-6">
+
+                        <div class="md:flex items-center gap-10">
+                            <label class="md:w-32 text-right"> Study At </label>
+                            <div class="flex-1 max-md:mt-4">
+                                <input type="text" value="" placeholder="Study At" class="lg:w-1/2 w-full">
+                            </div>
+                        </div>
+
+                        <div class="md:flex items-center gap-10">
+                            <label class="md:w-32 text-right"> Work At </label>
+                            <div class="flex-1 max-md:mt-4">
+                                <input type="text" value="" placeholder="Work At" class="lg:w-1/2 w-full">
+                            </div>
+                        </div>
+
+                        <hr class="border-gray-100 dark:border-gray-700">
+
+                        <div class="md:flex items-center gap-10">
+                            <label class="md:w-32 text-right"> Country </label>
+                            <div class="flex-1 max-md:mt-4">
+                                <input type="text" value="" placeholder="Country" class="lg:w-1/2 w-full">
+                            </div>
+                        </div>
+
+                        <div class="md:flex items-center gap-10">
+                            <label class="md:w-32 text-right"> City </label>
+                            <div class="flex-1 max-md:mt-4">
+                                <input type="text" value="" placeholder="City" class="lg:w-1/2 w-full">
+                            </div>
+                        </div>
+
+                        <div class="md:flex items-center gap-10">
+                            <label class="md:w-32 text-right"> State </label>
+                            <div class="flex-1 max-md:mt-4">
+                                <input type="text" value="" placeholder="State" class="lg:w-1/2 w-full">
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 mt-16 lg:pl-[10.5rem]">
+                            <button class="button lg:px-10 bg-primary text-white max-md:flex-1"> Save <span class="ripple-overlay"></span></button>
+                        </div>
+                    </div>
+
+                    <!-- tab checkbox -->
+                    <div>
+
+                        <div>
+
+                            <div class="md:flex items-start gap-16">
+                                <label class="md:w-32 text-right font-semibold">  Notify me when </label>
+
+                                <div class="flex-1 space-y-4 interactive-effect max-md:mt-5">
+
+                                    <div>
+                                        <label class="inline-flex items-center">
+                                            <input class="rounded" type="checkbox" checked name="checkbox1" value="3" />
+                                            <span class="ml-3"> Someone send me message </span>
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <label class="inline-flex items-center">
+                                            <input class="rounded" type="checkbox" checked name="checkbox1" value="3" />
+                                            <span class="ml-3"> Someone liked my photo </span>
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <label class="inline-flex items-center">
+                                            <input class="rounded" type="checkbox" checked name="checkbox2" value="3" />
+                                            <span class="ml-3"> Someone shared on my photo </span>
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <label class="inline-flex items-center">
+                                            <input class="rounded" type="checkbox" checked name="checkbox2" value="3" />
+                                            <span class="ml-3">   Someone followed me </span>
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <label class="inline-flex items-center">
+                                            <input class="rounded" type="checkbox" checked name="checkbox2" value="3" />
+                                            <span class="ml-3"> Someone liked my posts</span>
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <label class="inline-flex items-center">
+                                            <input class="rounded" type="checkbox" checked name="checkbox2" value="3" />
+                                            <span class="ml-3"> Someone mentioned me</span>
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <label class="inline-flex items-center">
+                                            <input class="rounded" type="checkbox" checked name="checkbox2" value="3" />
+                                            <span class="ml-3">   Someone sent me follow requset</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="flex items-center justify-center gap-4 mt-16">
+                                <button type="submit" class="button lg:px-6 bg-secondery max-md:flex-1"> Cancle</button>
+                                <button type="submit" class="button lg:px-10 bg-primary text-white max-md:flex-1"> Save</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- open chat box -->
+<div>
+    <button type="button" class="sm:m-10 m-5 px-4 py-2.5 rounded-2xl bg-gradient-to-tr from-blue-500 to-blue-700 text-white shadow fixed bottom-0 right-0 group flex items-center gap-2">
+
+        <svg class="w-6 h-6 group-aria-expanded:hidden duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"></path>
+        </svg>
+
+        <div class="text-base font-semibold max-sm:hidden"> Chat </div>
+
+        <svg class="w-6 h-6 -mr-1 hidden group-aria-expanded:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+        </svg>
+
+    </button>
+    <div class="bg-white rounded-xl drop-shadow-xl  sm:w-80 w-screen border-t dark:bg-dark3 dark:border-slate-600" id="chat__box"
+         uk-drop="offset:10;pos: bottom-right; animate-out: true; animation: uk-animation-scale-up uk-transform-origin-bottom-right; mode: click">
+
+        <div class="relative">
+            <div class="p-5">
+                <h1 class="text-lg font-bold text-black"> Chats </h1>
+            </div>
+
+            <!-- search input defaul is hidden -->
+            <div class="bg-white p-3 absolute w-full top-11 border-b flex gap-2 hidden dark:border-slate-600 dark:bg-slate-700 z-10"
+                 uk-scrollspy="cls:uk-animation-slide-bottom-small ; repeat: true; duration:0" id="search__chat">
+
+                <div class="relative w-full">
+                    <input type="text" class="w-full rounded-3xl dark:!bg-white/10" placeholder="Search">
+
+                    <button type="button" class="absolute  right-0  rounded-full shrink-0 px-2 -translate-y-1/2 top-1/2"
+                            uk-toggle="target: #search__chat ; cls: hidden">
+
+                        <ion-icon name="close-outline" class="text-xl flex"></ion-icon>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- button actions -->
+            <div class="absolute top-0 -right-1 m-5 flex gap-2 text-xl">
+                <button uk-toggle="target: #search__chat ; cls: hidden">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+                <button uk-toggle="target: #chat__box ; cls: uk-open">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+
+            <!-- tabs -->
+            <div class="page-heading bg-slat e-50 ">
+
+                <nav class="nav__underline -mt-7 px-5">
+
+                    <ul class="group" uk-switcher="connect: #chat__tabs ; animation: uk-animation-slide-right-medium, uk-animation-slide-left-medium">
+
+                        <li> <a href="#" class="inline-block py-[18px] border-b-2 border-transparent aria-expanded:text-black aria-expanded:border-black aria-expanded:dark:text-white aria-expanded:dark:border-white"> Friends  </a> </li>
+                        <li> <a href="#"> Groups </a> </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            <!-- tab 2 optional -->
+            <div class="grid grid-cols-2 px-3 py-2 bg-slate-50  -mt-12 relative z-10 text-sm border-b  hidden" uk-switcher="connect: #chat__tabs; toggle: * > button ; animation: uk-animation-slide-right uk-animation-slide-top">
+                <button class="bg-white shadow rounded-md py-1.5"> Friends </button>
+                <button> Groups </button>
+            </div>
+
+            <!-- chat list -->
+            <div class="uk-switcher overflow-hidden rounded-xl -mt-8" id="chat__tabs">
+
+                <!-- tab list 1 -->
+                <div class="space-y -m t-5 p-3 text-sm font-medium h-[280px] overflow-y-auto">
+
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-1.jpg" alt="" class="w-7 rounded-full">
+                            <div> Jesse Steeve </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-2.jpg" alt="" class="w-7 rounded-full">
+                            <div> John Michael </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-3.jpg" alt="" class="w-7 rounded-full">
+                            <div> Monroe Parker </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-5.jpg" alt="" class="w-7 rounded-full">
+                            <div> James Lewis </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-4.jpg" alt="" class="w-7 rounded-full">
+                            <div> Martin Gray </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-6.jpg" alt="" class="w-7 rounded-full">
+                            <div> Alexa stella </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-1.jpg" alt="" class="w-7 rounded-full">
+                            <div> Jesse Steeve </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-2.jpg" alt="" class="w-7 rounded-full">
+                            <div> John Michael </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-3.jpg" alt="" class="w-7 rounded-full">
+                            <div> Monroe Parker </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-5.jpg" alt="" class="w-7 rounded-full">
+                            <div> James Lewis </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-4.jpg" alt="" class="w-7 rounded-full">
+                            <div> Martin Gray </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-6.jpg" alt="" class="w-7 rounded-full">
+                            <div> Alexa stella </div>
+                        </div>
+                    </a>
+
+
+                </div>
+
+                <!-- tab list 2 -->
+                <div class="space-y -m t-5 p-3 text-sm font-medium h-[280px] overflow-y-auto">
+
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-1.jpg" alt="" class="w-7 rounded-full">
+                            <div> Jesse Steeve </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-2.jpg" alt="" class="w-7 rounded-full">
+                            <div> John Michael </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-3.jpg" alt="" class="w-7 rounded-full">
+                            <div> Monroe Parker </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-5.jpg" alt="" class="w-7 rounded-full">
+                            <div> James Lewis </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-4.jpg" alt="" class="w-7 rounded-full">
+                            <div> Martin Gray </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-6.jpg" alt="" class="w-7 rounded-full">
+                            <div> Alexa stella </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-1.jpg" alt="" class="w-7 rounded-full">
+                            <div> Jesse Steeve </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-2.jpg" alt="" class="w-7 rounded-full">
+                            <div> John Michael </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-3.jpg" alt="" class="w-7 rounded-full">
+                            <div> Monroe Parker </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-5.jpg" alt="" class="w-7 rounded-full">
+                            <div> James Lewis </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-4.jpg" alt="" class="w-7 rounded-full">
+                            <div> Martin Gray </div>
+                        </div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="flex items-center gap-3.5 rounded-lg p-2 hover:bg-secondery dark:hover:bg-white/10">
+                            <img src="assets/images/avatars/avatar-6.jpg" alt="" class="w-7 rounded-full">
+                            <div> Alexa stella </div>
+                        </div>
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="w-3.5 h-3.5 absolute -bottom-2 right-5 bg-white rotate-45 dark:bg-dark3"></div>
+    </div>
+</div>
+

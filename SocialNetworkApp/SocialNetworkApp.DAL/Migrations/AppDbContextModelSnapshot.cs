@@ -468,6 +468,9 @@ namespace SocialNetworkApp.DAL.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("UpdatedTime")
                         .HasColumnType("datetime2");
 
@@ -514,7 +517,15 @@ namespace SocialNetworkApp.DAL.Migrations
                     b.Property<DateTime>("UpdatedTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("UserId1")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId1");
 
                     b.ToTable("userLocations");
                 });
@@ -598,6 +609,9 @@ namespace SocialNetworkApp.DAL.Migrations
                         .HasMaxLength(32)
                         .HasColumnType("nvarchar(32)");
 
+                    b.Property<string>("ProfilePhoto")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Surname")
                         .IsRequired()
                         .HasMaxLength(32)
@@ -610,17 +624,9 @@ namespace SocialNetworkApp.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("UserLocationId")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid?>("UserLocationId1")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
                     b.HasIndex("UserId");
-
-                    b.HasIndex("UserLocationId1");
 
                     b.ToTable("userProfiles");
                 });
@@ -877,6 +883,15 @@ namespace SocialNetworkApp.DAL.Migrations
                     b.Navigation("UserFollowing");
                 });
 
+            modelBuilder.Entity("SocialNetworkApp.Core.Entities.UserLocation", b =>
+                {
+                    b.HasOne("SocialNetworkApp.Core.Entities.UserProfile", "User")
+                        .WithMany("UserLocations")
+                        .HasForeignKey("UserId1");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.UserPosts", b =>
                 {
                     b.HasOne("SocialNetworkApp.Core.Entities.Categories", "Category")
@@ -902,13 +917,7 @@ namespace SocialNetworkApp.DAL.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SocialNetworkApp.Core.Entities.UserLocation", "UserLocation")
-                        .WithMany("UserProfiles")
-                        .HasForeignKey("UserLocationId1");
-
                     b.Navigation("User");
-
-                    b.Navigation("UserLocation");
                 });
 
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.UserSettings", b =>
@@ -981,11 +990,6 @@ namespace SocialNetworkApp.DAL.Migrations
                     b.Navigation("Relationships");
                 });
 
-            modelBuilder.Entity("SocialNetworkApp.Core.Entities.UserLocation", b =>
-                {
-                    b.Navigation("UserProfiles");
-                });
-
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.UserPosts", b =>
                 {
                     b.Navigation("PostComments");
@@ -999,6 +1003,8 @@ namespace SocialNetworkApp.DAL.Migrations
 
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.UserProfile", b =>
                 {
+                    b.Navigation("UserLocations");
+
                     b.Navigation("UserProfiles");
                 });
 

@@ -18,4 +18,8 @@
     <ProjectReference Include="..\SocialNetworkApp.Business\SocialNetworkApp.Business.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\FriendRequest\" />
+  </ItemGroup>
+
 </Project>

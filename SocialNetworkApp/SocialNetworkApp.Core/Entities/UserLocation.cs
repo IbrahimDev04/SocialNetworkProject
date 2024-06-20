@@ -6,5 +6,8 @@ public class UserLocation : BaseEntity
     public string? City { get; set; }
     public string? State { get; set; }
 
-    public ICollection<UserProfile>? UserProfiles { get; set; }
+
+    public string? UserId { get; set; }
+    public UserProfile? User { get; set; }
+
 }

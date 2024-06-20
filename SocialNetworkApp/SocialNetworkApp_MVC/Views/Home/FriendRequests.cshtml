@@ -1,0 +1,15 @@
+﻿@using SocialNetworkApp.Business.ViewModels.UserFriend
+@{
+    Layout = null;
+}
+
+
+@model List<UserFriendRequestVM>
+
+@foreach (var item in Model)
+{
+    <h1>@item.UserName</h1>
+    <a asp-action="AcceptRequest" asp-controller="Home" asp-route-userId="@item.UserId">Accept Follow</a>
+    <a asp-action="UnfollowUser" asp-controller="Home" asp-route-userId="@item.UserId"> Follow</a>
+
+}

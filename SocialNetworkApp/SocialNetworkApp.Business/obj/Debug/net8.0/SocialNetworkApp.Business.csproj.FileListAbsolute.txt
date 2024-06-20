@@ -15,3 +15,4 @@ C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\Soc
 C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\obj\Debug\net8.0\refint\SocialNetworkApp.Business.dll
 C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\obj\Debug\net8.0\SocialNetworkApp.Business.pdb
 C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\obj\Debug\net8.0\ref\SocialNetworkApp.Business.dll
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Business\obj\Debug\net8.0\SocialNetworkApp.Business.sourcelink.json

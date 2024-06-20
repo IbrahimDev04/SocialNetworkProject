@@ -15,3 +15,4 @@ C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\Soc
 C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\obj\Debug\net8.0\SocialNetworkApp.DAL.pdb
 C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\obj\Debug\net8.0\SocialNetworkApp.DAL.genruntimeconfig.cache
 C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\obj\Debug\net8.0\ref\SocialNetworkApp.DAL.dll
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.DAL\obj\Debug\net8.0\SocialNetworkApp.DAL.sourcelink.json

@@ -14,4 +14,5 @@ public class AppUser : IdentityUser
     public ICollection<UserPosts>? UserPosts { get; set; }
     public ICollection<PostFavorites>? PostFavorites { get; set; }
     public ICollection<PostComments>? PostComments { get; set; }
+    public ICollection<ChatData>? ChatDatas { get; set; }
 }

@@ -1,0 +1,26 @@
+﻿@using SocialNetworkApp.Business.ViewModels.UserFriend
+@using SocialNetworkApp.Business.ViewModels.UserProfile
+@{
+    Layout = null;
+}
+
+@model UserProfileVM
+
+<div>
+    <h2>@Model.UserName's Profile</h2>
+    @if (!Model.IsFriend && !Model.FriendRequestSent)
+    {
+        <form asp-action="SendRequest" asp-controller="FriendRequest" method="post">
+            <input type="hidden" name="userId" value="@Model.Id" />
+            <button type="submit" class="btn btn-primary">Send Friend Request</button>
+        </form>
+    }
+    else if (Model.FriendRequestSent)
+    {
+        <p>Friend request sent.</p>
+    }
+    else if (Model.IsFriend)
+    {
+        <p>You are friends.</p>
+    }
+</div>

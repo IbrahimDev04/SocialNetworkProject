@@ -2,6 +2,7 @@
 
 public class UserFriends : BaseEntity
 {
+    public bool Status { get; set; } = false;
     public string UserFollowingId { get; set; }
     public AppUser? UserFollowing { get; set; }
 

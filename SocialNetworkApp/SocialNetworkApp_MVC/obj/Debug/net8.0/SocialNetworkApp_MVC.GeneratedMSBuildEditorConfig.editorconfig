@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp_MVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Account/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Account/ForgotPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,8 +46,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Account/SuccessfullReset.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTdWNjZXNzZnVsbFJlc2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Account/SuccessfullyRegistered.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTdWNjZXNzZnVsbHlSZWdpc3RlcmVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Chat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Home/FriendRequests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGcmllbmRSZXF1ZXN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Profile/ConfirmePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxDb25maXJtZVBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Profile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Profile/ProfileSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxQcm9maWxlU2V0dGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Profile/SuccessfullChanging.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxTdWNjZXNzZnVsbENoYW5naW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Profile/UserProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxVc2VyUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Shared/Components/Header/Default.cshtml]

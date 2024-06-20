@@ -10,3 +10,4 @@ C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\Soc
 C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\obj\Debug\net8.0\refint\SocialNetworkApp.Core.dll
 C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\obj\Debug\net8.0\SocialNetworkApp.Core.pdb
 C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\obj\Debug\net8.0\ref\SocialNetworkApp.Core.dll
+C:\Users\ibrah\OneDrive\Masaüstü\CodeAcademy\FinalProject\SocialNetworkApp\SocialNetworkApp.Core\obj\Debug\net8.0\SocialNetworkApp.Core.sourcelink.json

@@ -8,7 +8,7 @@ namespace SocialNetworkApp.Business.Services.Interfaces;
 
 public interface IUserService
 {
-    public Task<IdentityResult> RegisteredAsync(RegisterCurier registerVM);
+    public Task<AppUser> RegisteredAsync(RegisterCurier registerVM);
 
     public Task<SignInResult> LoginInAsync(LoginVM vm, AppUser user);
 

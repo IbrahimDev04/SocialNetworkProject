@@ -27,6 +27,8 @@ public class AppDbContext : IdentityDbContext<AppUser>
     public DbSet<UserSettings> userSettings { get; set; }
     public DbSet<UserStories> userStories { get; set; }
     public DbSet<ViewerStory> viewerStories { get; set; }
+    public DbSet<ChatData> chatDatas { get; set; }
+
 
     public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
     {
