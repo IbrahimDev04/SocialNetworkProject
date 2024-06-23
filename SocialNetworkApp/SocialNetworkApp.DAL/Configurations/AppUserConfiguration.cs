@@ -28,5 +28,15 @@ public class AppUserConfiguration : IEntityTypeConfiguration<AppUser>
             .HasForeignKey(e => e.FriendFollowingId)
             .OnDelete(DeleteBehavior.Restrict);
 
+        builder.HasMany(e => e.ChatDatasFrom)
+            .WithOne(e => e.From)
+            .HasForeignKey(e => e.FromId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        builder.HasMany(e => e.ChatDatasTo)
+            .WithOne(e => e.To)
+            .HasForeignKey(e => e.ToId)
+            .OnDelete(DeleteBehavior.Restrict);
+
     }
 }

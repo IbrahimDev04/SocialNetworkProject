@@ -18,6 +18,8 @@ public class GetUserVM
 
     public bool IsForYou { get; set; }
 
+    public bool HaveUserStory { get; set; }
+
     public int? Count { get; set; }
 
 }

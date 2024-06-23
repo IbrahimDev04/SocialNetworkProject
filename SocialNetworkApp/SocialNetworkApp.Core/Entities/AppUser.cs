@@ -7,6 +7,8 @@ public class AppUser : IdentityUser
     public ICollection<UserProfile>? UserProfiles { get; set; }
     public ICollection<Relationship> RelationshipsUser { get; set; }
     public ICollection<Relationship> RelationshipsRelUser { get; set; }
+    public ICollection<ChatData>? ChatDatasFrom { get; set; }
+    public ICollection<ChatData>? ChatDatasTo { get; set; }
     public ICollection<UserFriends>? UserFriendsSender { get; set; }
     public ICollection<UserFriends>? UserFriendsTaker { get; set; }
     public ICollection<UserStories>? UserStories { get; set; }
@@ -14,5 +16,4 @@ public class AppUser : IdentityUser
     public ICollection<UserPosts>? UserPosts { get; set; }
     public ICollection<PostFavorites>? PostFavorites { get; set; }
     public ICollection<PostComments>? PostComments { get; set; }
-    public ICollection<ChatData>? ChatDatas { get; set; }
 }

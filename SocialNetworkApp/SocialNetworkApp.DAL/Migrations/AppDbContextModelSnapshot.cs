@@ -245,6 +245,42 @@ namespace SocialNetworkApp.DAL.Migrations
                     b.ToTable("categories");
                 });
 
+            modelBuilder.Entity("SocialNetworkApp.Core.Entities.ChatData", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("FromId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ToId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("UpdatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FromId");
+
+                    b.HasIndex("ToId");
+
+                    b.ToTable("chatDatas");
+                });
+
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.PostComments", b =>
                 {
                     b.Property<Guid>("Id")
@@ -678,11 +714,13 @@ namespace SocialNetworkApp.DAL.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ImageOrVideoUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
+
+                    b.Property<string>("StatusMind")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedTime")
                         .HasColumnType("datetime2");
@@ -785,6 +823,25 @@ namespace SocialNetworkApp.DAL.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("SocialNetworkApp.Core.Entities.ChatData", b =>
+                {
+                    b.HasOne("SocialNetworkApp.Core.Entities.AppUser", "From")
+                        .WithMany("ChatDatasFrom")
+                        .HasForeignKey("FromId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("SocialNetworkApp.Core.Entities.AppUser", "To")
+                        .WithMany("ChatDatasTo")
+                        .HasForeignKey("ToId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("From");
+
+                    b.Navigation("To");
                 });
 
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.PostComments", b =>
@@ -959,6 +1016,10 @@ namespace SocialNetworkApp.DAL.Migrations
 
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.AppUser", b =>
                 {
+                    b.Navigation("ChatDatasFrom");
+
+                    b.Navigation("ChatDatasTo");
+
                     b.Navigation("PostComments");
 
                     b.Navigation("PostFavorites");

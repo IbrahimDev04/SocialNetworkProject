@@ -65,6 +65,8 @@ public class AppDbContext : IdentityDbContext<AppUser>
         builder.ApplyConfigurationsFromAssembly(typeof(UserPostConfiguration).Assembly);
         builder.ApplyConfigurationsFromAssembly(typeof(UserProfileConfiguration).Assembly);
         builder.ApplyConfigurationsFromAssembly(typeof(AppUserConfiguration).Assembly);
+        builder.ApplyConfigurationsFromAssembly(typeof(ChatDataConfiguration).Assembly);
+
 
         base.OnModelCreating(builder);
     }

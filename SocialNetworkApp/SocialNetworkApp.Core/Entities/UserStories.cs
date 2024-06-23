@@ -2,7 +2,8 @@
 
 public class UserStories : BaseEntity
 {
-    public string ImageOrVideoUrl { get; set; }
+    public string? ImageOrVideoUrl { get; set; }
+    public string? StatusMind { get; set; }
     public int ViewCount { get; set; } 
 
     public string UserId { get; set; }

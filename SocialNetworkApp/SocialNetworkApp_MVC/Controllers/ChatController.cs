@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SocialNetworkApp.Business.ViewModels.AppUser;
+using SocialNetworkApp.Business.ViewModels.ChatData;
 using SocialNetworkApp.Business.ViewModels.DataCourier;
 using SocialNetworkApp.Core.Entities;
 using SocialNetworkApp.DAL.Contexts;
@@ -30,6 +31,16 @@ namespace SocialNetworkApp_MVC.Controllers
                     
                 }).ToListAsync();
 
+            var sendChat = await _context.chatDatas
+                .Where(cd => ((cd.ToId == recieveId && cd.FromId == User.FindFirst(ClaimTypes.NameIdentifier).Value) || (cd.FromId == recieveId && cd.ToId == User.FindFirst(ClaimTypes.NameIdentifier).Value)))
+                .Select(cd => new GetChatDataVM
+                {
+                    Message = cd.Message,
+                    ToId = cd.ToId,
+                    FromId = cd.FromId,
+                    Datetime = cd.CreatedTime.ToString("dd MMM yyyy"),
+                }).ToListAsync();
+
 
             var user = await _context.userFriends.FirstOrDefaultAsync(uf => (uf.UserFollowingId == recieveId && uf.FriendFollowingId == User.FindFirst(ClaimTypes.NameIdentifier).Value) || (uf.UserFollowingId == User.FindFirst(ClaimTypes.NameIdentifier).Value && uf.FriendFollowingId == recieveId));
 
@@ -38,6 +49,7 @@ namespace SocialNetworkApp_MVC.Controllers
             HomeCurierFriends homeCurier = new HomeCurierFriends
             {
                 userVM = users,
+                sendChatDataVM = sendChat,
                 recieveId = recieveId != null ? recieveId : "Null",
                 FullName = userprofile != null ? userprofile.User.UserName : "Null",
                 ProfilePhote = userprofile != null ? userprofile.ProfilePhoto : "Null",

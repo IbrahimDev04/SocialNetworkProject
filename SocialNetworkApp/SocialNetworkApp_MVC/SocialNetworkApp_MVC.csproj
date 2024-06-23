@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <Folder Include="Views\FriendRequest\" />
+    <Folder Include="wwwroot\stories\storyContent\" />
   </ItemGroup>
 
 </Project>

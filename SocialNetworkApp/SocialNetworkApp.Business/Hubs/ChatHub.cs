@@ -39,5 +39,29 @@ public class ChatHub(AppDbContext _context) : Hub
         await Clients.Users(clients).SendAsync("ClientJoined", Username);
     }
 
+    public async Task SendMessageAsync(string message, string RecieveUserId, string UserId)
+    {
+        AppUser recieveUser = await _context.appUsers.FirstOrDefaultAsync(up => up.Id == RecieveUserId);
+
+        AppUser currentUser = await _context.appUsers.FirstOrDefaultAsync(up => up.Id == UserId);
+
+         string userId = currentUser.Id;
+
+        ChatData chatData = new ChatData
+        {
+            Message = message,
+            FromId = userId,
+            ToId = RecieveUserId
+        };
+
+
+
+        await _context.chatDatas.AddAsync(chatData);
+        await _context.SaveChangesAsync();
+
+        await Clients.User(RecieveUserId).SendAsync("recieveMessage",message, userId);
+        
+    }
+
 
 }
