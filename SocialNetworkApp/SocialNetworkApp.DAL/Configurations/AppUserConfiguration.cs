@@ -38,5 +38,20 @@ public class AppUserConfiguration : IEntityTypeConfiguration<AppUser>
             .HasForeignKey(e => e.ToId)
             .OnDelete(DeleteBehavior.Restrict);
 
+        builder.HasMany(e => e.PostStats)
+            .WithOne(e => e.User)
+            .HasForeignKey(e => e.UserId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        builder.HasMany(e => e.GroupCreates)
+            .WithOne(e => e.GroupCreator)
+            .HasForeignKey(e => e.GroupCreatorId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        builder.HasMany(e => e.GroupMembers)
+            .WithOne(e => e.User)
+            .HasForeignKey(e => e.UserId)
+            .OnDelete(DeleteBehavior.Restrict);
+
     }
 }

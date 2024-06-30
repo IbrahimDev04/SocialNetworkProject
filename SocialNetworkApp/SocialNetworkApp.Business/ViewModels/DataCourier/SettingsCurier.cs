@@ -7,9 +7,11 @@ namespace SocialNetworkApp.Business.ViewModels.DataCourier;
 
 public class SettingsCurier
 {
-    public UserProfileSettingsVM UserProfileVM { get; set; } = new UserProfileSettingsVM();
+    public UserProfileSettingsVM? UserProfileVM { get; set; }
 
     public ChangePasswordVM? ChangePasswordVM { get; set; }
 
-    public ChangableUserLocationVM ChangableUserLocationVM { get; set; } = new ChangableUserLocationVM();
+    public ChangableUserLocationVM? ChangableUserLocationVM { get; set; }
+
+    public GetUserProfileUpdateVM GetUserProfileUpdateVM { get; set; } = new GetUserProfileUpdateVM();
 }

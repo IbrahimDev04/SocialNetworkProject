@@ -16,7 +16,13 @@ public class UserProfile : BaseEntity
 
     public ICollection<UserLocation>? UserLocations { get; set; }
 
-    public ICollection<UserSettings>? UserProfiles { get; set; }
+    public ICollection<UserSettings>? UserSettings { get; set; }
+
+    public ICollection<UserPosts>? UserPosts { get; set; }
+
+
+
+
 
 
 }

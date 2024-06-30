@@ -71,12 +71,12 @@ public class UserProfileService(IUserProfileRepository _repo, AppDbContext _cont
 
         if (user == null) throw new NotFountException("User Not Found!");
 
-        curier.UserProfileVM.Name = user.Name;
-        curier.UserProfileVM.Surname = user.Surname;
-        curier.UserProfileVM.About = user.About;
-        curier.UserProfileVM.Gender = (GenderEnum)Enum.Parse(typeof(GenderEnum), user.Gender);
-        curier.UserProfileVM.CurrentWorkAt = user.CurrentWorkAt;
-        curier.UserProfileVM.CurrentStudyUni = user.CurrentStudyUni;
+        curier.GetUserProfileUpdateVM.Name = user.Name;
+        curier.GetUserProfileUpdateVM.Surname = user.Surname;
+        curier.GetUserProfileUpdateVM.About = user.About;
+        curier.GetUserProfileUpdateVM.Gender = (GenderEnum)Enum.Parse(typeof(GenderEnum), user.Gender);
+        curier.GetUserProfileUpdateVM.CurrentWorkAt = user.CurrentWorkAt;
+        curier.GetUserProfileUpdateVM.CurrentStudyUni = user.CurrentStudyUni;
 
         return curier;
 
@@ -114,17 +114,45 @@ public class UserProfileService(IUserProfileRepository _repo, AppDbContext _cont
 
         if (user == null) throw new NotFountException("User Not Found!");
 
+        if(curier.UserProfileVM.About != null)
+        {
+            user.Name = curier.UserProfileVM.Name;
+            user.Surname = curier.UserProfileVM.Surname;
+            user.About = curier.UserProfileVM.About;
+            user.Gender = curier.UserProfileVM.Gender.ToString();
+            user.CurrentWorkAt = curier.UserProfileVM.CurrentWorkAt;
+            user.CurrentStudyUni = curier.UserProfileVM.CurrentStudyUni;
+        }
+        else
+        {
+            user.Name = curier.UserProfileVM.Name;
+            user.Surname = curier.UserProfileVM.Surname;
+            user.Gender = curier.UserProfileVM.Gender.ToString();
+            user.CurrentWorkAt = curier.UserProfileVM.CurrentWorkAt;
+            user.CurrentStudyUni = curier.UserProfileVM.CurrentStudyUni;
+        }
 
-
-        user.Name = curier.UserProfileVM.Name;
-        user.Surname = curier.UserProfileVM.Surname;
-        user.About = curier.UserProfileVM.About;
-        user.Gender = curier.UserProfileVM.Gender.ToString();
-        user.CurrentWorkAt = curier.UserProfileVM.CurrentWorkAt;
-        user.CurrentStudyUni = curier.UserProfileVM.CurrentStudyUni;
+        
 
         await _repo.SaveAsync();
 
         return curier;
+    }
+
+    public async Task UpdateUserLocationById(SettingsCurier curier, string UserId)
+    {
+        if (UserId == null) throw new NotFountException("Bad Request!");
+
+        var user = await _context.userLocations.FirstOrDefaultAsync(u => u.UserId == UserId);
+
+        if (user == null) throw new NotFountException("User Not Found!");
+
+        user.Country = curier.ChangableUserLocationVM.Country;
+        user.State = curier.ChangableUserLocationVM.State;
+        user.City = curier.ChangableUserLocationVM.City;
+
+        await _repo.SaveAsync();
+
+
     }
 }

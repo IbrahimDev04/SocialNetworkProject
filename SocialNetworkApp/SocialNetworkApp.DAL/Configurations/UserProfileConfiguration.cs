@@ -27,5 +27,10 @@ public class UserProfileConfiguration : IEntityTypeConfiguration<UserProfile>
 
         builder.Property(up => up.CurrentWorkAt)
             .HasMaxLength(120);
+
+        builder.HasMany(up => up.UserPosts)
+            .WithOne(up => up.UserProfile)
+            .HasForeignKey(up => up.UserProfileId)
+            .OnDelete(DeleteBehavior.Restrict);
     }
 }

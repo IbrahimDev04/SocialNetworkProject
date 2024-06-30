@@ -220,31 +220,6 @@ namespace SocialNetworkApp.DAL.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("SocialNetworkApp.Core.Entities.Categories", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("CategoryName")
-                        .IsRequired()
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
-
-                    b.Property<DateTime>("CreatedTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime>("UpdatedTime")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("categories");
-                });
-
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.ChatData", b =>
                 {
                     b.Property<Guid>("Id")
@@ -281,6 +256,96 @@ namespace SocialNetworkApp.DAL.Migrations
                     b.ToTable("chatDatas");
                 });
 
+            modelBuilder.Entity("SocialNetworkApp.Core.Entities.GroupChatData", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("GroupMemberId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GroupMemberId");
+
+                    b.ToTable("groupChatDatas");
+                });
+
+            modelBuilder.Entity("SocialNetworkApp.Core.Entities.GroupCreate", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("GroupCreatorId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("GroupName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("UpdatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GroupCreatorId");
+
+                    b.ToTable("groupCreates");
+                });
+
+            modelBuilder.Entity("SocialNetworkApp.Core.Entities.GroupMember", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("GroupId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("UpdatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GroupId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("groupMembers");
+                });
+
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.PostComments", b =>
                 {
                     b.Property<Guid>("Id")
@@ -298,10 +363,6 @@ namespace SocialNetworkApp.DAL.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<string>("PostId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime>("UpdatedTime")
                         .HasColumnType("datetime2");
 
@@ -309,7 +370,7 @@ namespace SocialNetworkApp.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<Guid?>("UserPostsId")
+                    b.Property<Guid>("UserPostsId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
@@ -333,11 +394,7 @@ namespace SocialNetworkApp.DAL.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<string>("PostId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid?>("PostId1")
+                    b.Property<Guid>("PostId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("UpdatedTime")
@@ -349,7 +406,7 @@ namespace SocialNetworkApp.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PostId1");
+                    b.HasIndex("PostId");
 
                     b.HasIndex("UserId");
 
@@ -368,22 +425,21 @@ namespace SocialNetworkApp.DAL.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<int>("LikeCount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("PostId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid?>("PostId1")
+                    b.Property<Guid>("PostId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("UpdatedTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("PostId1");
+                    b.HasIndex("PostId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("postStats");
                 });
@@ -572,13 +628,6 @@ namespace SocialNetworkApp.DAL.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("CategoryId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid?>("CategoryId1")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<DateTime>("CreatedTime")
                         .HasColumnType("datetime2");
 
@@ -587,13 +636,10 @@ namespace SocialNetworkApp.DAL.Migrations
                         .HasMaxLength(320)
                         .HasColumnType("nvarchar(320)");
 
-                    b.Property<string>("ImageOrVideoUrl")
+                    b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("Status")
                         .HasColumnType("bit");
 
                     b.Property<DateTime>("UpdatedTime")
@@ -603,11 +649,17 @@ namespace SocialNetworkApp.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<Guid?>("UserProfileId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("VideoUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId1");
-
                     b.HasIndex("UserId");
+
+                    b.HasIndex("UserProfileId");
 
                     b.ToTable("userPosts");
                 });
@@ -844,6 +896,47 @@ namespace SocialNetworkApp.DAL.Migrations
                     b.Navigation("To");
                 });
 
+            modelBuilder.Entity("SocialNetworkApp.Core.Entities.GroupChatData", b =>
+                {
+                    b.HasOne("SocialNetworkApp.Core.Entities.GroupMember", "GroupMember")
+                        .WithMany("GroupChatDatas")
+                        .HasForeignKey("GroupMemberId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("GroupMember");
+                });
+
+            modelBuilder.Entity("SocialNetworkApp.Core.Entities.GroupCreate", b =>
+                {
+                    b.HasOne("SocialNetworkApp.Core.Entities.AppUser", "GroupCreator")
+                        .WithMany("GroupCreates")
+                        .HasForeignKey("GroupCreatorId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("GroupCreator");
+                });
+
+            modelBuilder.Entity("SocialNetworkApp.Core.Entities.GroupMember", b =>
+                {
+                    b.HasOne("SocialNetworkApp.Core.Entities.GroupCreate", "Group")
+                        .WithMany("GroupMembers")
+                        .HasForeignKey("GroupId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("SocialNetworkApp.Core.Entities.AppUser", "User")
+                        .WithMany("GroupMembers")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Group");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.PostComments", b =>
                 {
                     b.HasOne("SocialNetworkApp.Core.Entities.AppUser", "User")
@@ -854,7 +947,9 @@ namespace SocialNetworkApp.DAL.Migrations
 
                     b.HasOne("SocialNetworkApp.Core.Entities.UserPosts", "UserPosts")
                         .WithMany("PostComments")
-                        .HasForeignKey("UserPostsId");
+                        .HasForeignKey("UserPostsId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.Navigation("User");
 
@@ -865,7 +960,9 @@ namespace SocialNetworkApp.DAL.Migrations
                 {
                     b.HasOne("SocialNetworkApp.Core.Entities.UserPosts", "Post")
                         .WithMany("PostFavorites")
-                        .HasForeignKey("PostId1");
+                        .HasForeignKey("PostId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.HasOne("SocialNetworkApp.Core.Entities.AppUser", "User")
                         .WithMany("PostFavorites")
@@ -882,9 +979,19 @@ namespace SocialNetworkApp.DAL.Migrations
                 {
                     b.HasOne("SocialNetworkApp.Core.Entities.UserPosts", "Post")
                         .WithMany("PostStats")
-                        .HasForeignKey("PostId1");
+                        .HasForeignKey("PostId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("SocialNetworkApp.Core.Entities.AppUser", "User")
+                        .WithMany("PostStats")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.Navigation("Post");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.PostTags", b =>
@@ -951,19 +1058,20 @@ namespace SocialNetworkApp.DAL.Migrations
 
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.UserPosts", b =>
                 {
-                    b.HasOne("SocialNetworkApp.Core.Entities.Categories", "Category")
-                        .WithMany("UserPosts")
-                        .HasForeignKey("CategoryId1");
-
                     b.HasOne("SocialNetworkApp.Core.Entities.AppUser", "User")
                         .WithMany("UserPosts")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Category");
+                    b.HasOne("SocialNetworkApp.Core.Entities.UserProfile", "UserProfile")
+                        .WithMany("UserPosts")
+                        .HasForeignKey("UserProfileId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("User");
+
+                    b.Navigation("UserProfile");
                 });
 
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.UserProfile", b =>
@@ -980,7 +1088,7 @@ namespace SocialNetworkApp.DAL.Migrations
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.UserSettings", b =>
                 {
                     b.HasOne("SocialNetworkApp.Core.Entities.UserProfile", "UserProfile")
-                        .WithMany("UserProfiles")
+                        .WithMany("UserSettings")
                         .HasForeignKey("UserProfileId1");
 
                     b.Navigation("UserProfile");
@@ -1020,9 +1128,15 @@ namespace SocialNetworkApp.DAL.Migrations
 
                     b.Navigation("ChatDatasTo");
 
+                    b.Navigation("GroupCreates");
+
+                    b.Navigation("GroupMembers");
+
                     b.Navigation("PostComments");
 
                     b.Navigation("PostFavorites");
+
+                    b.Navigation("PostStats");
 
                     b.Navigation("RelationshipsRelUser");
 
@@ -1041,9 +1155,14 @@ namespace SocialNetworkApp.DAL.Migrations
                     b.Navigation("UserStories");
                 });
 
-            modelBuilder.Entity("SocialNetworkApp.Core.Entities.Categories", b =>
+            modelBuilder.Entity("SocialNetworkApp.Core.Entities.GroupCreate", b =>
                 {
-                    b.Navigation("UserPosts");
+                    b.Navigation("GroupMembers");
+                });
+
+            modelBuilder.Entity("SocialNetworkApp.Core.Entities.GroupMember", b =>
+                {
+                    b.Navigation("GroupChatDatas");
                 });
 
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.RelationshipType", b =>
@@ -1066,7 +1185,9 @@ namespace SocialNetworkApp.DAL.Migrations
                 {
                     b.Navigation("UserLocations");
 
-                    b.Navigation("UserProfiles");
+                    b.Navigation("UserPosts");
+
+                    b.Navigation("UserSettings");
                 });
 
             modelBuilder.Entity("SocialNetworkApp.Core.Entities.UserStories", b =>

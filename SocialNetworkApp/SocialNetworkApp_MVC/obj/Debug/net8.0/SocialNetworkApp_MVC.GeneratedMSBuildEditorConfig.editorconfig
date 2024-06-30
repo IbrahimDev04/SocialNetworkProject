@@ -58,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTdWNjZXNzZnVsbHlSZWdpc3RlcmVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Chat/Group.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxHcm91cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Chat/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -70,8 +74,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Profile/AnotherUserProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxBbm90aGVyVXNlclByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Profile/ConfirmePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxDb25maXJtZVBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Profile/GetAnotherFriend.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxHZXRBbm90aGVyRnJpZW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Profile/GetFriend.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxHZXRGcmllbmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ibrah/OneDrive/Masaüstü/CodeAcademy/FinalProject/SocialNetworkApp/SocialNetworkApp_MVC/Views/Profile/Index.cshtml]

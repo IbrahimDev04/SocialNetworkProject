@@ -1,0 +1,860 @@
+﻿@model GroupDataCurier
+
+<style>
+    @@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    @@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+    @@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+
+    .asd {
+        font-size: 50px;
+        font-family: "Playwrite NZ", cursive;
+    }
+
+    $success-color: #2ec946;
+
+    main {
+        padding: 40px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .alert {
+        width: 512px;
+        padding: 16px;
+        margin: 8px;
+        max-width: 90%;
+    }
+
+    @@mixin alert-1($color) {
+        background-color: rgba($color, 0.05);
+
+        .alert-title {
+            color: $color;
+        }
+    }
+
+    @@mixin alert-2($color) {
+        border-left: 4px solid $color;
+        background-color: rgba($color, 0.05);
+
+        .alert-title {
+            color: $color;
+        }
+    }
+
+    @@mixin alert-3($color) {
+        border: 1px solid lighten($color, 25%);
+        border-radius: 8px;
+        background-color: rgba($color, 0.05);
+
+        .alert-title {
+            color: $color;
+        }
+    }
+
+    .alert-1-primary {
+        @@include alert-1($primary-color);
+    }
+
+    .alert-1-warning {
+        @@include alert-1($warning-color);
+    }
+
+    .alert-2-success {
+        @@include alert-2($success-color);
+    }
+
+    .alert-2-secondary {
+        @@include alert-2($secondary-color);
+    }
+
+    .alert-3-primary {
+        @@include alert-3($primary-color);
+    }
+
+    .alert-3-danger {
+        @@include alert-3($danger-color);
+    }
+
+    .alert-title {
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .alert-content {
+        margin: 0;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        color: #555555;
+    }
+</style>
+
+
+
+<main id="site__main" class="2xl:ml-[--w-side]  xl:ml-[--w-side-sm] p-2.5 h-[calc(100vh-var(--m-top))] mt-[--m-top]" >
+
+    <div class="relative overflow-hidden border -m-2.5 dark:border-slate-700">
+
+        <div class="flex bg-white dark:bg-dark2">
+
+            <!-- sidebar -->
+            <div class="md:w-[360px] relative border-r dark:border-slate-700">
+
+                <div id="side-chat" class="top-0 left-0 max-md:fixed max-md:w-5/6 max-md:h-screen bg-white z-50 max-md:shadow max-md:-translate-x-full dark:bg-dark2">
+                    <!-- heading title -->
+                    <div class="p-4 border-b dark:border-slate-700">
+
+                        <div class="flex mt-2 items-center justify-between">
+
+                            <h2 class="text-2xl font-bold text-black ml-1 dark:text-white"> Chats </h2>
+
+
+                            <!-- right action buttons -->
+                            <div class="flex items-center gap-2.5">
+
+
+
+                                <div class="md:w-[270px] w-full uk-dropdown" uk-dropdown="pos: bottom-left; offset:10; animation: uk-animation-slide-bottom-small" style="max-width: 1246px; top: 62px; left: 285.2px;">
+                                    <nav>
+                                        <a href="#"> <ion-icon class="text-2xl shrink-0 -ml-1 md hydrated" name="checkmark-outline" role="img" aria-label="checkmark outline"></ion-icon> Mark all as read </a>
+                                        <a href="#"> <ion-icon class="text-2xl shrink-0 -ml-1 md hydrated" name="notifications-outline" role="img" aria-label="notifications outline"></ion-icon> notifications setting </a>
+                                        <a href="#"> <ion-icon class="text-xl shrink-0 -ml-1 md hydrated" name="volume-mute-outline" role="img" aria-label="volume mute outline"></ion-icon> Mute notifications </a>
+                                    </nav>
+                                </div>
+
+                                <button id="open-popup-btn" style="display: flex; align-items: center;">
+                                    <ion-icon name="checkmark-circle-outline" class="text-2xl flex md hydrated" role="img" aria-label="checkmark circle outline"></ion-icon>
+                                    <span style="font-size: 10px;">Create Group</span>
+                                </button>
+
+
+
+
+
+
+                                <!-- mobile toggle menu -->
+                                <button type="button" class="md:hidden" uk-toggle="target: #side-chat ; cls: max-md:-translate-x-full" aria-expanded="true">
+                                    <ion-icon name="chevron-down-outline" role="img" class="md hydrated" aria-label="chevron down outline"></ion-icon>
+                                </button>
+
+                            </div>
+
+
+                        </div>
+                        <!-- search -->
+
+                    </div>
+
+
+                    <!-- users list -->
+                    <div class="space-y-2 p-2 overflow-y-auto md:h-[calc(100vh-204px)] h-[calc(100vh-130px)]">
+
+                        <div id="group-result">
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+                <!-- overly -->
+                <div id="side-chat" class="bg-slate-100/40 backdrop-blur w-full h-full dark:bg-slate-800/40 z-40 fixed inset-0 max-md:-translate-x-full md:hidden" uk-toggle="target: #side-chat ; cls: max-md:-translate-x-full" tabindex="0" aria-expanded="true"></div>
+
+            </div>
+
+            <!-- message center -->
+
+            @if(Model.CreateGroupVM.GroupId != null)
+            {
+                <div class="flex-1">
+
+                <!-- chat heading -->
+                <div class="flex items-center justify-between gap-2 w- px-6 py-3.5 z-10 border-b dark:border-slate-700 uk-animation-slide-top-medium">
+
+                    <div class="flex items-center sm:gap-4 gap-2">
+
+                        <!-- toggle for mobile -->
+                        <button type="button" class="md:hidden" uk-toggle="target: #side-chat ; cls: max-md:-translate-x-full" aria-expanded="true">
+                            <ion-icon name="chevron-back-outline" class="text-2xl -ml-4 md hydrated" role="img" aria-label="chevron back outline"></ion-icon>
+                        </button>
+
+                        <div class="relative cursor-pointer max-md:hidden" uk-toggle="target: .rightt ; cls: hidden" tabindex="0" aria-expanded="true">
+                                <img src="~/assets/images/logo-site.png" alt="" class="w-8 h-8 rounded-full shadow">
+                            @* <div class="w-2 h-2 bg-teal-500 rounded-full absolute right-0 bottom-0 m-px"></div> *@
+                        </div>
+                        <div class="cursor-pointer" uk-toggle="target: .rightt ; cls: hidden" tabindex="0" aria-expanded="true">
+                            <div class="text-base font-bold">  </div>
+                            @* <div class="text-xs text-green-500 font-semibold"> Online</div> *@
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="flex items-center gap-2">
+                        <button type="button" class="hover:bg-slate-100 p-1.5 rounded-full" uk-toggle="target: .rightt ; cls: hidden" aria-expanded="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- chats bubble -->
+                <div class="w-full p-5 py-10 overflow-y-auto md:h-[calc(100vh-204px)] h-[calc(100vh-195px)]">
+                    <div id="clientStatusMessage">
+                    </div>
+
+
+                    <div class="text-sm font-medium space-y-6 messages-value">
+
+
+                        <!-- received -->
+                        <div class="flex gap-3 message-value" id="message-value">
+                            <div class="rounded-[20px] max-w-sm from-sky-500 to-blue-500 text-white" style="overflow-wrap: break-word;">
+                            </div>
+                            <p class="px-4 py-2 rounded-[20px] max-w-sm bg-secondery message" style="overflow-wrap: break-word;"></p>
+                        </div>
+
+                        <!-- sent -->
+                        <div class="flex gap-2 flex-row-reverse items-end message-your-value">
+                            <p class="px-4 py-2 rounded-[20px] max-w-sm bg-gradient-to-tr from-sky-500 to-blue-500 text-white shadow" style="overflow-wrap: break-word;">
+
+                            </p>
+                        </div>
+
+                        @foreach (var message in Model.GetMessagesVM)
+                        {
+                            if (Model.CreateGroupVM.UserId != message.UserId)
+                            {
+                                <!-- received -->
+                                <div class="flex gap-3">
+                                    <div class="rounded-[20px] max-w-sm from-sky-500 to-blue-500 text-white" style="overflow-wrap: break-word;">
+                                        @message.UserName
+                                    </div>
+                                    <p class="px-4 py-2 rounded-[20px] max-w-sm bg-secondery message" style="overflow-wrap: break-word;">
+                                        @message.Message
+                                    </p>
+                                </div>
+                            }
+                            else
+                            {
+                                <!-- sent -->
+                                <div class="flex gap-2 flex-row-reverse items-end">
+                                    <p class="px-4 py-2 rounded-[20px] max-w-sm bg-gradient-to-tr from-sky-500 to-blue-500 text-white shadow" style="overflow-wrap: break-word;">
+                                        @message.Message
+                                    </p>
+                                </div>
+                            }
+                        }
+
+
+                       
+
+
+
+
+
+
+
+                        @*
+                        <!-- time -->
+                        <div class="flex justify-center ">
+                        <div class="font-medium text-gray-500 text-sm dark:text-white/70">
+                        April 8,2023,6:30 AM
+                        </div>
+                        </div>
+
+                        <!-- sent media-->
+                        <div class="flex gap-2 flex-row-reverse items-end">
+                        <img src="assets/images/avatars/avatar-3.jpg" alt="" class="w-4 h-4 rounded-full shadow">
+
+                        <a class="block rounded-[18px] border overflow-hidden" href="#">
+                        <div class="max-w-md">
+                        <div class="max-w-full relative w-72">
+                        <div class="relative" style="padding-bottom: 57.4286%">
+                        <div class="w-full h-full absolute inset-0">
+                        <img src="assets/images/product/product-2.jpg" alt="" class="block max-w-full max-h-52 w-full h-full object-cover">
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </a>
+
+                        </div> *@
+
+                    </div>
+
+                </div>
+
+                <!-- sending message area -->
+                <div class="flex items-center md:gap-4 gap-2 md:p-3 p-2 overflow-hidden">
+
+
+                    <div class="relative flex-1">
+                        <textarea id="txt-group-message" placeholder="Write your message" rows="1" class="w-full resize-none bg-secondery rounded-full px-4 p-2 text-area-value"></textarea>
+
+                        <button id="btn-send-message" type="button" class="text-white shrink-0 p-2 absolute right-0.5 top-0 btn-send-message">
+                            <ion-icon class="text-xl flex md hydrated" name="send-outline" role="img" aria-label="send outline"></ion-icon>
+                        </button>
+
+                    </div>
+
+
+                </div>
+                </div>
+            }
+            else
+            {
+                <div class="w-full p-5 py-10 overflow-y-auto md:h-[calc(100vh-204px)] h-[calc(100vh-195px)] open-with-delay">
+                </div>
+
+                <script>
+                    $(".open-with-delay").html(
+                        `
+                                                                <div class="py-10 text-center text-sm lg:pt-8">
+                                                                <div class="mt-8">
+                                                                    <div style="margin-top:20%;" class="md:text-xl text-base font-medium text-black dark:text-white asd"> Welcome to Group  </div>
+                                                                    <div style="margin-top:3%;" class="md:text-xl text-base font-medium text-black dark:text-white asd"> (☆*: .｡. oo .｡.:*☆)  </div>
+                                                                </div>
+                                                            </div>
+                                            `
+                    )
+
+                    $(".open-with-delay").fadeOut(-2000, () => {
+                        setTimeout(() => {
+                            $(".open-with-delay").fadeIn(2000);
+                        })
+                    })
+                </script>
+            }
+            
+
+
+
+
+            <!-- user profile right info -->
+            <div class="rightt w-full h-full absolute top-0 right-0 z-10 hidden transition-transform">
+                <div class="w-[360px] border-l shadow-lg h-screen bg-white absolute right-0 top-0 uk-animation-slide-right-medium delay-200 z-50 dark:bg-dark2 dark:border-slate-700">
+
+                    <div class="w-full h-1.5 bg-gradient-to-r to-purple-500 via-red-500 from-pink-500 -mt-px"></div>
+
+                    <div class="py-10 text-center text-sm pt-20">
+                        <img src="~/assets/images/logo-site.png" class="w-24 h-24 rounded-full mx-auto mb-3" alt="">
+                        <div class="mt-8">
+                            <div class="md:text-xl text-base font-medium text-black dark:text-white"> @Model.CreateGroupVM.GroupName  </div>
+                            <div class="text-gray-500 text-sm mt-1 dark:text-white/80">@@@Model.CreateGroupVM.GroupCreator</div>
+                        </div>
+                    </div>
+
+                    <hr class="opacity-80 dark:border-slate-700">
+
+                    <ul class="text-base font-medium p-3">
+                        <li> <button id="open-show-member" type="button" class="flex items-center gap-5 rounded-md p-3 w-full hover:bg-secondery"> <ion-icon name="flag-outline" class="text-2xl md hydrated" role="img" aria-label="flag outline"></ion-icon> Show Member     </button></li>
+                        <li> <button id="open-add-member" type="button" class="flex items-center gap-5 rounded-md p-3 w-full hover:bg-secondery"> <ion-icon name="stop-circle-outline" class="text-2xl md hydrated" role="img" aria-label="stop circle outline"></ion-icon> Add Member    </button> </li>
+                        <li> <a asp-action="ExitInGroup" asp-controller="Chat" asp-route-groupId="@Model.CreateGroupVM.GroupId" type="button" class="flex items-center gap-5 rounded-md p-3 w-full hover:bg-red-50 text-red-500 cursor-pointer"> <ion-icon name="trash-outline" class="text-2xl md hydrated" role="img" aria-label="trash outline"></ion-icon> Exit Group   </a> </li>
+                    </ul>
+                    <style>
+
+                        #popup-window {
+                            position: absolute;
+                            top: 50px;
+                            left: 50px;
+                            width: 30%;
+                            padding: 10px;
+                            background-color: #121032;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                            margin-top: 5%;
+                            margin-left: 20%;
+                            border-radius: 10px;
+                            border: 1px solid grey;
+                        }
+
+
+                        #add-member-window {
+                            position: absolute;
+                            top: 250px;
+                            left: 0;
+                            width: 220px;
+                            padding: 10px;
+                            background-color: #121032;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                            margin-top: 5%;
+                            margin-left: 20%;
+                            border-radius: 10px;
+                            border: 1px solid grey;
+                        }
+
+                        #show-member-window {
+                            position: absolute;
+                            top: 250px;
+                            left: 0;
+                            width: 220px;
+                            padding: 10px;
+                            background-color: #121032;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                            margin-top: 5%;
+                            margin-left: 20%;
+                            border-radius: 10px;
+                            border: 1px solid grey;
+                        }
+
+                        .create-head h2 {
+                            text-align: center;
+                            margin-top: 2%;
+                            font-size: 25px;
+                            margin-bottom: 2%;
+                            font-family: cursive;
+                        }
+
+                        .create-group-section label {
+                            position: absolute;
+                            font-size: 10px;
+                            top: 47%;
+                            background: rgb(51 65 85 / var(--tw-bg-opacity));
+                            border-radius: 10px 10px 0px 0px;
+                            padding: 2px;
+                            margin-bottom: 30px;
+                        }
+
+                        .create-group-button button {
+                            background-color: #304177;
+                            padding: 6px;
+                            border-radius: 10px;
+                        }
+
+                        .hidden {
+                            display: none;
+                        }
+
+                        .group-input-area {
+                            margin-bottom: 3%;
+                        }
+
+                        .add-friend-head {
+                            text-align: center;
+                        }
+
+                        .show-friend-head {
+                            text-align: center;
+                        }
+
+                        .user-info-group {
+                            padding: 10px;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                            .user-info-group img {
+                                padding: 0px;
+                                margin: 0px;
+                            }
+
+                            .user-info-group h3 {
+                                padding-left: 10px;
+                            }
+
+                        .user-info-group-main {
+                            align-items: center;
+                        }
+                    </style>
+
+                    <div id="add-member-window" class=" hidden">
+                        <div class="add-friend-head">
+                            <h2>
+                                Add Member
+                            </h2>
+                        </div>
+
+                        <div id="users-for-add">
+                        </div>
+
+
+                    </div>
+
+                    <div id="show-member-window" class=" hidden">
+                        <div class="show-friend-head">
+                            <h2>
+                                Show Member
+                            </h2>
+                        </div>
+
+                        <div id="users-for-show">
+                        </div>
+
+
+                    </div>
+
+                    <!-- close button -->
+                    <button type="button" class="absolute top-0 right-0 m-4 p-2 bg-secondery rounded-full" uk-toggle="target: .rightt ; cls: hidden" aria-expanded="true">
+                        <ion-icon name="close" class="text-2xl flex md hydrated" role="img" aria-label="close"></ion-icon>
+                    </button>
+
+                </div>
+
+                <!-- overly -->
+                <div class="bg-slate-100/40 backdrop-blur absolute w-full h-full dark:bg-slate-800/40" uk-toggle="target: .rightt ; cls: hidden" tabindex="0" aria-expanded="true"></div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<div id="popup-window" class="hidden">
+    <div class="create-head">
+        <h2>
+            Create Group
+        </h2>
+    </div>
+    <div class="flex justify-between group-input-area">
+        <div class="create-group-section">
+            <label class="">Group Name</label>
+            <input id="txt-create-group" type="text" name="name" value="" />
+        </div>
+        <div class="create-group-button">
+            <button id="btn-create-group">
+                Create
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const button = document.getElementById('open-show-member');
+        const popup = document.getElementById('show-member-window');
+
+        let timeoutId;
+
+        function showPopup() {
+            popup.classList.remove('hidden');
+            clearTimeout(timeoutId);
+        }
+
+        function hidePopup() {
+            timeoutId = setTimeout(() => {
+                popup.classList.add('hidden');
+            }, 300); // Add a slight delay to ensure the cursor has truly left both elements
+        }
+
+        button.addEventListener('mouseenter', showPopup);
+        button.addEventListener('mouseleave', hidePopup);
+
+        popup.addEventListener('mouseenter', showPopup);
+        popup.addEventListener('mouseleave', hidePopup);
+    });
+
+</script>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const button = document.getElementById('open-add-member');
+        const popup = document.getElementById('add-member-window');
+
+        let timeoutId;
+
+        function showPopup() {
+            popup.classList.remove('hidden');
+            clearTimeout(timeoutId);
+        }
+
+        function hidePopup() {
+            timeoutId = setTimeout(() => {
+                popup.classList.add('hidden');
+            }, 300); // Add a slight delay to ensure the cursor has truly left both elements
+        }
+
+        button.addEventListener('mouseenter', showPopup);
+        button.addEventListener('mouseleave', hidePopup);
+
+        popup.addEventListener('mouseenter', showPopup);
+        popup.addEventListener('mouseleave', hidePopup);
+    });
+
+</script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const button = document.getElementById('open-popup-btn');
+        const popup = document.getElementById('popup-window');
+
+        let timeoutId;
+
+        function showPopup() {
+            popup.classList.remove('hidden');
+            clearTimeout(timeoutId);
+        }
+
+        function hidePopup() {
+            timeoutId = setTimeout(() => {
+                popup.classList.add('hidden');
+            }, 300); // Add a slight delay to ensure the cursor has truly left both elements
+        }
+
+        button.addEventListener('mouseenter', showPopup);
+        button.addEventListener('mouseleave', hidePopup);
+
+        popup.addEventListener('mouseenter', showPopup);
+        popup.addEventListener('mouseleave', hidePopup);
+    });
+
+</script>
+
+<script>
+    $(document).ready(() => {
+        var connection = new signalR.HubConnectionBuilder()
+            .withUrl("/chathub")
+            .build();
+        connection.start()
+            .then(function () {
+                var userIdInvoke = @Html.Raw(Json.Serialize(Model.CreateGroupVM.UserId));
+
+                var groupIdInvoke = @Html.Raw(Json.Serialize(Model.CreateGroupVM.GroupId));
+                connection.invoke("AddUserToGroup", groupIdInvoke);
+            });
+
+
+        $("#btn-create-group").click(() => {
+
+            var userId = @Html.Raw(Json.Serialize(Model.CreateGroupVM.UserId))
+
+                connection.invoke("CreateGroup", $("#txt-create-group").val(), userId)
+        })
+
+
+
+
+
+
+
+
+
+        connection.on("recieveMessageGroup", (message, userId, username, profilePhoto) => {
+            var groupIdInvoke = @Html.Raw(Json.Serialize(Model.CreateGroupVM.GroupId));
+            var userIdInvoke = @Html.Raw(Json.Serialize(Model.CreateGroupVM.UserId));
+
+            if (userId != userIdInvoke) {
+                const messageValue = $(".message-value").clone();
+                messageValue.removeClass("message-value");
+                messageValue.find("div").html(username);
+                messageValue.find("p").html(message);
+                $(".messages-value").append(messageValue);
+                messageValue.removeClass("message-value");
+            }
+            else {
+                const messageValue = $(".message-your-value").clone();
+                messageValue.find("p").html(message);
+                $(".messages-value").append(messageValue);
+                messageValue.removeClass("message-your-value");
+            }
+            console.log(message)
+            console.log(userId)
+            console.log(userId2)
+            console.log(username)
+
+
+        })
+
+
+
+
+
+        $("#btn-send-message").click(() => {
+            const message = $("#txt-group-message").val();
+            var userIdInvoke = @Html.Raw(Json.Serialize(Model.CreateGroupVM.UserId));
+            var groupIdInvoke = @Html.Raw(Json.Serialize(Model.CreateGroupVM.GroupId));
+
+
+            connection.invoke("SendMessageToGroup", groupIdInvoke, message, userIdInvoke)
+        })
+
+
+
+
+
+
+
+
+        function getData() {
+            var userId = @Html.Raw(Json.Serialize(Model.CreateGroupVM.UserId))
+
+                            var url = "/Chat/GetGroup?userId=" + userId
+            fetch(url)
+                .then(res => { console.log(res); return res.json() })
+                .then(data => placedData(data) & console.log(data))
+
+            var groupResult = document.getElementById("group-result");
+
+            function placedData(data) {
+
+                groupResult.innerHTML = "";
+
+                data.forEach(res => {
+                    var groupId = res.groupId
+                    const detailsUrl = '@Url.Action("Group", "Chat", new { groupId = "__id__" })'.replace("__id__", groupId)
+                    groupResult.innerHTML +=
+                        `
+                                                        <a href="${detailsUrl}" class="relative flex items-center gap-4 p-2 duration-200 rounded-xl hover:bg-secondery">
+                                                    <div class="relative h-14 shrink-0">
+
+    @* <div class="w-4 h-4 absolute bottom-0 right-0  bg-green-500 rounded-full border border-white dark:border-slate-800"></div> *@
+                                                    </div>
+                                                    <div class="flex-1 min-w-0">
+                                                        <div class="flex items-center gap-2 mb-1.5">
+                                                            <div class="mr-auto text-sm text-black dark:text-white font-medium">${res.groupName}</div>
+    @* <div class="text-xs font-light text-gray-500 dark:text-white/70">09:40AM</div> *@
+                                                        </div>
+    @* <div class="font-medium overflow-hidden text-ellipsis text-sm whitespace-nowrap">Love your photos 😍</div> *@
+                                                    </div>
+
+                                                </a>
+
+                                        `
+                })
+
+            }
+
+
+        }
+
+
+        function getMember() {
+
+            var groupId = @Html.Raw(Json.Serialize(Model.CreateGroupVM.GroupId));
+            var url = "/Chat/GetMember?groupId=" + groupId;
+
+            fetch(url)
+                .then(res => { console.log(res); return res.json() })
+                .then(data => placedData(data) & console.log(data))
+
+
+            var area = document.getElementById("users-for-show");
+
+            function placedData(data) {
+                area.innerHTML = ""
+
+                data.forEach(res => {
+                    area.innerHTML +=
+                        `
+                                                    <div id="haveShowUser-${res.userId}" class="flex justify-between user-info-group-main">
+                                                        <div id="haveShowUser-${res.userId}" userId="${res.userId}" class="flex user-info-group">
+                                                            <img src="../${res.profilePhoto}" class="w-5 h-5 rounded-full mx-auto mb-3" / >
+                                                            <h3>${res.userName}</h3>
+                                                        </div>
+                                                        <div id="isAdmin-${res.userId}">
+
+                                                        </div>
+
+                                                    </div>
+                                        `;
+
+
+                    var idGroupName = "showGroup-" + res.userId
+                    var groupId = @Html.Raw(Json.Serialize(Model.CreateGroupVM.GroupId));
+                    var addGroup = document.getElementById(idGroupName)
+                    var haveUserName = "haveShowUser-" + res.userId
+                    var haveUser = document.getElementById(haveUserName)
+                    var isAdminName = "isAdmin-" + res.userId;
+                    var isAdmin = document.getElementById(isAdminName)
+
+                    if (res.isAdmin) {
+                        isAdmin.innerHTML =
+                            `
+                                                 <button id="showGroup-${res.userId}">Exit</button>
+                                        `
+                    }
+
+                    addGroup.addEventListener("click", function () {
+                        urlAdd = "/Chat/ExitMember?userId=" + res.userId + "&groupId=" + groupId
+                        fetch(urlAdd)
+                            .then(res => res.json())
+                            .then(data => console.log(data))
+
+                        haveUser.innerHTML = "";
+
+                    })
+                })
+            }
+        }
+
+
+        function getUser() {
+            var groupId = @Html.Raw(Json.Serialize(Model.CreateGroupVM.GroupId));
+            var url = "/Chat/GetFriendToGroup?groupId=" + groupId;
+
+            fetch(url)
+                .then(res => { console.log(res); return res.json() })
+                .then(data => placedData(data) & console.log(data))
+
+            var area = document.getElementById("users-for-add");
+
+            function placedData(data) {
+                area.innerHTML = ""
+
+
+                data.forEach(res => {
+                    area.innerHTML +=
+                        `
+                                                <div id="haveUser-${res.userId}" class="flex justify-between user-info-group-main">
+                                                    <div id="haveUser-${res.userId}" userId="${res.userId}" class="flex user-info-group">
+                                                            <img src="../${res.profilePhoto}" class="w-5 h-5 rounded-full mx-auto mb-3" / >
+                                                        <h3>${res.userName}</h3>
+                                                    </div>
+                                                    <div>
+                                                        <button id="addGroup-${res.userId}">Add</button>
+                                                    </div>
+
+                                                </div>
+                                    `;
+
+
+                    var idGroupName = "addGroup-" + res.userId
+                    var groupId = @Html.Raw(Json.Serialize(Model.CreateGroupVM.GroupId));
+                    var addGroup = document.getElementById(idGroupName)
+                    var haveUserName = "haveUser-" + res.userId
+                    var haveUser = document.getElementById(haveUserName)
+
+                    addGroup.addEventListener("click", function () {
+                        urlAdd = "/Chat/AddMember?userId=" + res.userId + "&groupId=" + groupId
+                        fetch(urlAdd)
+                            .then(res => res.json())
+                            .then(data => console.log(data))
+
+                        haveUser.innerHTML = "";
+
+                    })
+                })
+            }
+        };
+
+
+
+        getMember()
+        getUser()
+        getData()
+
+
+
+
+
+    })
+</script>

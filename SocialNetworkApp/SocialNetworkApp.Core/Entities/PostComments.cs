@@ -7,7 +7,7 @@ public class PostComments : BaseEntity
     public string UserId { get; set; }
     public AppUser? User { get; set; }
 
-    public string PostId { get; set; }
+    public Guid UserPostsId { get; set; }
     public UserPosts? UserPosts { get; set; }
 
 }

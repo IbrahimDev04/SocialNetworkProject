@@ -11,4 +11,5 @@ public interface IUserProfileService
     public Task<SettingsCurier> GetUserProfileById(string UserId);
     public Task<SettingsCurier> UpdateUserProfileById(SettingsCurier curier, string UserId);
     public Task UpdateUserProfilePhotoById(string UserId, string? fileName);
+    public Task UpdateUserLocationById(SettingsCurier curier, string UserId);
 }

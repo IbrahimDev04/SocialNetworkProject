@@ -20,6 +20,8 @@
 
   <ItemGroup>
     <Folder Include="Views\FriendRequest\" />
+    <Folder Include="wwwroot\posts\postContent\imgs\" />
+    <Folder Include="wwwroot\posts\postContent\videos\" />
     <Folder Include="wwwroot\stories\storyContent\" />
   </ItemGroup>
 

@@ -557,6 +557,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\logo-mobile.png"
     },
     {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\logo-site.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-site.png"
+    },
+    {
       "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\assets\\images\\logo.png",
       "PackagePath": "staticwebassets\\assets\\images\\logo.png"
     },
@@ -669,6 +673,10 @@
       "PackagePath": "staticwebassets\\imgs\\profilePhoto\\50tfcilc.crw.png"
     },
     {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\imgs\\profilePhoto\\buhscjxs.jh2.png",
+      "PackagePath": "staticwebassets\\imgs\\profilePhoto\\buhscjxs.jh2.png"
+    },
+    {
       "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\imgs\\profilePhoto\\bwqytzgs.ezk.png",
       "PackagePath": "staticwebassets\\imgs\\profilePhoto\\bwqytzgs.ezk.png"
     },
@@ -683,6 +691,82 @@
     {
       "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\imgs\\profilePhoto\\ylyoo5xi.cnp.png",
       "PackagePath": "staticwebassets\\imgs\\profilePhoto\\ylyoo5xi.cnp.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\4ysgef5d.jji.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\4ysgef5d.jji.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\bv05bnkg.sxv.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\bv05bnkg.sxv.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\cyllvq5u.mxi.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\cyllvq5u.mxi.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\cyr3ve4z.23h.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\cyr3ve4z.23h.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\da3xtx0i.5nc.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\da3xtx0i.5nc.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\difmnzuh.hjp.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\difmnzuh.hjp.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\efmhikpi.jvn.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\efmhikpi.jvn.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\epaqt0b1.4lt.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\epaqt0b1.4lt.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\idwlemvn.3ij.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\idwlemvn.3ij.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\olrazkph.kd1.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\olrazkph.kd1.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\qpxpg10w.2xc.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\qpxpg10w.2xc.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\srzczoxj.w00.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\srzczoxj.w00.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\tkxssxpf.r20.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\tkxssxpf.r20.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\v20v1utm.gxt.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\v20v1utm.gxt.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\wimoyejr.dnb.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\wimoyejr.dnb.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\wkymroct.m2i.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\wkymroct.m2i.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\imgs\\z2fdk4na.tvb.png",
+      "PackagePath": "staticwebassets\\posts\\postContent\\imgs\\z2fdk4na.tvb.png"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\videos\\gr3pc5kd.c35.mp4",
+      "PackagePath": "staticwebassets\\posts\\postContent\\videos\\gr3pc5kd.c35.mp4"
+    },
+    {
+      "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\posts\\postContent\\videos\\mguxigw3.pzd.mp4",
+      "PackagePath": "staticwebassets\\posts\\postContent\\videos\\mguxigw3.pzd.mp4"
     },
     {
       "Id": "C:\\Users\\ibrah\\OneDrive\\Masaüstü\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\wwwroot\\stories\\storyContent\\04r051d4.3db.png",

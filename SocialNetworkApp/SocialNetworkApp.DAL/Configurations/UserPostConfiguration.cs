@@ -12,7 +12,22 @@ public class UserPostConfiguration : IEntityTypeConfiguration<UserPosts>
             .IsRequired()
             .HasMaxLength(320);
 
-        builder.Property(up => up.Status)
-            .IsRequired();
+        builder.HasMany(up => up.PostStats)
+            .WithOne(up => up.Post)
+            .HasForeignKey(up => up.PostId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        builder.HasMany(up => up.PostFavorites)
+            .WithOne(up => up.Post)
+            .HasForeignKey(up => up.PostId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+
+        builder.HasMany(up => up.PostComments)
+            .WithOne(up => up.UserPosts)
+            .HasForeignKey(up => up.UserPostsId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+
     }
 }

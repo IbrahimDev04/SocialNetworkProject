@@ -3,20 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp_mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp_mvc\\views\\chat\\group.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\views\\chat\\group.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp_mvc\\views\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\views\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp_mvc\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\socialnetworkapp_mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\socialnetworkapp_mvc\\views\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\views\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\socialnetworkapp_mvc\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp_mvc\\views\\profile\\profilesettings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\views\\profile\\profilesettings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp_mvc\\views\\profile\\successfullchanging.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\views\\profile\\successfullchanging.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp_mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp_mvc\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C237A03E-863D-4765-8ADE-0FAC7AA1E975}|SocialNetworkApp.Business\\SocialNetworkApp.Business.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp.business\\viewmodels\\groupchatdata\\creategroupvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C237A03E-863D-4765-8ADE-0FAC7AA1E975}|SocialNetworkApp.Business\\SocialNetworkApp.Business.csproj|solutionrelative:socialnetworkapp.business\\viewmodels\\groupchatdata\\creategroupvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp_mvc\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp_mvc\\views\\profile\\getanotherfriend.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\views\\profile\\getanotherfriend.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp_mvc\\views\\profile\\anotheruserprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\views\\profile\\anotheruserprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp_mvc\\controllers\\userprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\controllers\\userprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp_mvc\\controllers\\friendrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\controllers\\friendrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp_mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{022E7436-35C6-4F0B-AB3C-E04B93430E99}|SocialNetworkApp_MVC\\SocialNetworkApp_MVC.csproj|solutionrelative:socialnetworkapp_mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C237A03E-863D-4765-8ADE-0FAC7AA1E975}|SocialNetworkApp.Business\\SocialNetworkApp.Business.csproj|c:\\users\\ibrah\\onedrive\\masa\u00FCst\u00FC\\codeacademy\\finalproject\\socialnetworkapp\\socialnetworkapp.business\\viewmodels\\datacourier\\homecommoncurier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C237A03E-863D-4765-8ADE-0FAC7AA1E975}|SocialNetworkApp.Business\\SocialNetworkApp.Business.csproj|solutionrelative:socialnetworkapp.business\\viewmodels\\datacourier\\homecommoncurier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,32 +74,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "SocialNetworkApp_MVC\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAFkAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T08:24:57.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeCommonCurier.cs",
-              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp.Business\\ViewModels\\DataCourier\\HomeCommonCurier.cs",
-              "RelativeDocumentMoniker": "SocialNetworkApp.Business\\ViewModels\\DataCourier\\HomeCommonCurier.cs",
-              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp.Business\\ViewModels\\DataCourier\\HomeCommonCurier.cs",
-              "RelativeToolTip": "SocialNetworkApp.Business\\ViewModels\\DataCourier\\HomeCommonCurier.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T08:24:29.678Z",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SocialNetworkApp_MVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-30T10:52:08.894Z",
               "EditorCaption": ""
             },
             {
@@ -62,22 +97,191 @@
               "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Views\\Chat\\Index.cshtml",
               "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Chat\\Index.cshtml",
               "RelativeToolTip": "SocialNetworkApp_MVC\\Views\\Chat\\Index.cshtml",
-              "ViewState": "AQIAACUCAAAAAAAAAAAAAMwBAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-22T14:18:45.431Z",
+              "WhenOpened": "2024-06-30T10:15:17.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Group.cshtml",
+              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Chat\\Group.cshtml",
+              "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Views\\Chat\\Group.cshtml",
+              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Chat\\Group.cshtml",
+              "RelativeToolTip": "SocialNetworkApp_MVC\\Views\\Chat\\Group.cshtml",
+              "ViewState": "AQIAAEgBAAAAAAAAAAAAwF8BAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-30T10:08:36.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SuccessfullChanging.cshtml",
+              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Profile\\SuccessfullChanging.cshtml",
+              "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Views\\Profile\\SuccessfullChanging.cshtml",
+              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Profile\\SuccessfullChanging.cshtml",
+              "RelativeToolTip": "SocialNetworkApp_MVC\\Views\\Profile\\SuccessfullChanging.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-30T10:06:47.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProfileSettings.cshtml",
+              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Profile\\ProfileSettings.cshtml",
+              "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Views\\Profile\\ProfileSettings.cshtml",
+              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Profile\\ProfileSettings.cshtml",
+              "RelativeToolTip": "SocialNetworkApp_MVC\\Views\\Profile\\ProfileSettings.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-30T10:06:44.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Profile\\Index.cshtml",
+              "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Views\\Profile\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Profile\\Index.cshtml",
+              "RelativeToolTip": "SocialNetworkApp_MVC\\Views\\Profile\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-30T10:02:26.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "SocialNetworkApp_MVC\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAAAJ4AAABzAAAA",
+              "ViewState": "AQIAANADAAAAAAAAAAAuwOcDAACiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-21T16:27:21.395Z",
+              "WhenOpened": "2024-06-26T13:07:47.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeToolTip": "SocialNetworkApp_MVC\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T15:40:21.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GetAnotherFriend.cshtml",
+              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Profile\\GetAnotherFriend.cshtml",
+              "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Views\\Profile\\GetAnotherFriend.cshtml",
+              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Profile\\GetAnotherFriend.cshtml",
+              "RelativeToolTip": "SocialNetworkApp_MVC\\Views\\Profile\\GetAnotherFriend.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-30T10:06:48.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreateGroupVM.cs",
+              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp.Business\\ViewModels\\GroupChatData\\CreateGroupVM.cs",
+              "RelativeDocumentMoniker": "SocialNetworkApp.Business\\ViewModels\\GroupChatData\\CreateGroupVM.cs",
+              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp.Business\\ViewModels\\GroupChatData\\CreateGroupVM.cs",
+              "RelativeToolTip": "SocialNetworkApp.Business\\ViewModels\\GroupChatData\\CreateGroupVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T10:09:22.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AnotherUserProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Profile\\AnotherUserProfile.cshtml",
+              "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Views\\Profile\\AnotherUserProfile.cshtml",
+              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Views\\Profile\\AnotherUserProfile.cshtml",
+              "RelativeToolTip": "SocialNetworkApp_MVC\\Views\\Profile\\AnotherUserProfile.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-30T10:02:03.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "SocialNetworkApp_MVC\\Controllers\\ChatController.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAAEUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T09:38:23.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FriendRequestController.cs",
+              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Controllers\\FriendRequestController.cs",
+              "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Controllers\\FriendRequestController.cs",
+              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Controllers\\FriendRequestController.cs",
+              "RelativeToolTip": "SocialNetworkApp_MVC\\Controllers\\FriendRequestController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T09:38:09.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Controllers\\UserProfileController.cs",
+              "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Controllers\\UserProfileController.cs",
+              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Controllers\\UserProfileController.cs",
+              "RelativeToolTip": "SocialNetworkApp_MVC\\Controllers\\UserProfileController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T09:38:03.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "SocialNetworkApp_MVC\\Controllers\\ProfileController.cs",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAAOwAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T09:37:02.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SocialNetworkApp_MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ibrah\\OneDrive\\Masa\u00FCst\u00FC\\CodeAcademy\\FinalProject\\SocialNetworkApp\\SocialNetworkApp_MVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SocialNetworkApp_MVC\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T09:36:38.874Z",
               "EditorCaption": ""
             }
           ]

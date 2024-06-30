@@ -13,7 +13,6 @@ public class AppDbContext : IdentityDbContext<AppUser>
     }
 
     public DbSet<AppUser> appUsers { get; set; }
-    public DbSet<Categories> categories { get; set; }
     public DbSet<PostComments> postComments { get; set; }
     public DbSet<PostFavorites> postFavorites { get; set; }
     public DbSet<PostStats> postStats { get; set; }
@@ -28,6 +27,10 @@ public class AppDbContext : IdentityDbContext<AppUser>
     public DbSet<UserStories> userStories { get; set; }
     public DbSet<ViewerStory> viewerStories { get; set; }
     public DbSet<ChatData> chatDatas { get; set; }
+    public DbSet<GroupCreate> groupCreates { get; set; }
+    public DbSet<GroupMember> groupMembers { get; set; }
+    public DbSet<GroupChatData> groupChatDatas { get; set; }
+
 
 
     public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
@@ -57,7 +60,6 @@ public class AppDbContext : IdentityDbContext<AppUser>
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
-        builder.ApplyConfigurationsFromAssembly(typeof(CategoryConfiguration).Assembly);
         builder.ApplyConfigurationsFromAssembly(typeof(PostCommentConfiguration).Assembly);
         builder.ApplyConfigurationsFromAssembly(typeof(PostTagConfiguration).Assembly);
         builder.ApplyConfigurationsFromAssembly(typeof(RelationshipTypeConfiguration).Assembly);
@@ -66,6 +68,7 @@ public class AppDbContext : IdentityDbContext<AppUser>
         builder.ApplyConfigurationsFromAssembly(typeof(UserProfileConfiguration).Assembly);
         builder.ApplyConfigurationsFromAssembly(typeof(AppUserConfiguration).Assembly);
         builder.ApplyConfigurationsFromAssembly(typeof(ChatDataConfiguration).Assembly);
+        builder.ApplyConfigurationsFromAssembly(typeof(GroupCreateConfiguration).Assembly);
 
 
         base.OnModelCreating(builder);

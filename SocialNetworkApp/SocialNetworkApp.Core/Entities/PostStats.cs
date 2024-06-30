@@ -2,8 +2,10 @@
 
 public class PostStats : BaseEntity
 {
-    public int LikeCount { get; set; }
 
-    public string PostId { get; set; }
+    public string UserId { get; set; }
+    public AppUser User { get; set; }
+
+    public Guid PostId { get; set; }
     public UserPosts? Post { get; set; }
 }

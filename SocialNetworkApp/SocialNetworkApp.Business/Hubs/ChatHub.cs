@@ -5,12 +5,31 @@ using Microsoft.SqlServer.Management.Smo;
 using SocialNetworkApp.Business.ViewModels.AppUser;
 using SocialNetworkApp.Core.Entities;
 using SocialNetworkApp.DAL.Contexts;
+using System.Collections.Concurrent;
 using System.Security.Claims;
 
 namespace SocialNetworkApp.Business.Hubs;
 
 public class ChatHub(AppDbContext _context) : Hub
 {
+
+    private static ConcurrentDictionary<string, string> UserConnections = new ConcurrentDictionary<string, string>();
+
+    public override Task OnConnectedAsync()
+    {
+        var userId = Context.UserIdentifier;
+        UserConnections[Context.ConnectionId] = userId;
+        return base.OnConnectedAsync();
+    }
+
+    public override Task OnDisconnectedAsync(Exception exception)
+    {
+        UserConnections.TryRemove(Context.ConnectionId, out _);
+        return base.OnDisconnectedAsync(exception);
+    }
+
+
+
     public async Task GetNickName(string Username, string UserId)
     {
 
@@ -61,6 +80,61 @@ public class ChatHub(AppDbContext _context) : Hub
 
         await Clients.User(RecieveUserId).SendAsync("recieveMessage",message, userId);
         
+    }
+
+    public async Task CreateGroup(string groupName, string UserId)
+    {
+        await Groups.AddToGroupAsync(UserId, groupName);
+
+        GroupCreate group = new GroupCreate
+        {
+            GroupName = groupName,
+            GroupCreatorId = UserId
+        };
+
+       
+        await _context.groupCreates.AddAsync(group);
+        await _context.SaveChangesAsync();
+
+
+        GroupMember member = new GroupMember
+        {
+            UserId = UserId,
+            GroupId = group.Id
+
+        };
+
+        await _context.groupMembers.AddAsync(member);
+        await _context.SaveChangesAsync();
+
+
+    }
+
+    public async Task AddUserToGroup(string groupId)
+    {
+        await Groups.AddToGroupAsync(Context.ConnectionId, groupId);  
+    }
+
+
+    public async Task SendMessageToGroup(string groupId, string message, string userId)
+    {
+
+        var user = await _context.userProfiles.Include(up => up.User).FirstOrDefaultAsync(up => up.UserId == userId); 
+
+        await Clients.Group(groupId).SendAsync("recieveMessageGroup", message, userId, user.User.UserName, user.ProfilePhoto);
+
+        var member = await _context.groupMembers.FirstOrDefaultAsync(gm => gm.UserId == userId && gm.GroupId.ToString() == groupId);
+
+        GroupChatData chat = new GroupChatData
+        {
+            GroupMemberId = member.Id,
+            Message = message,
+        };
+
+        await _context.groupChatDatas.AddAsync(chat);
+        await _context.SaveChangesAsync();
+
+
     }
 
 
